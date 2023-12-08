@@ -5,6 +5,7 @@ import (
 	"os/signal"
 	"syscall"
 
+	"github.com/gin-gonic/gin"
 	"github.com/hixraid/dummy-image/internal/config"
 	"github.com/hixraid/dummy-image/internal/handler"
 	"github.com/hixraid/dummy-image/internal/server"
@@ -12,6 +13,8 @@ import (
 )
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
+
 	cfgFile, err := config.LoadConfig("config")
 	if err != nil {
 		logrus.Fatalf("can't load file: %v", err)
