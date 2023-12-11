@@ -6,7 +6,6 @@ import (
 	"image/png"
 	"io"
 	"net/http"
-	"strconv"
 
 	"github.com/gin-gonic/gin"
 	"github.com/hixraid/dummy-image/internal/middleware"
@@ -14,24 +13,16 @@ import (
 )
 
 func generateImage(ctx *gin.Context) {
-	path, err := middleware.GetPath(ctx)
+	imageInfo, err := middleware.GetImageInfo(ctx)
 	if err != nil {
 		response.NewErrorResponse(ctx, http.StatusInternalServerError, err.Error())
 		return
 	}
 
-	size, err := strconv.ParseInt(path[0], 10, 64)
-	if err != nil {
-		response.NewErrorResponse(ctx, http.StatusBadRequest, "invalid image size")
-		return
-	}
+	img := image.NewRGBA(image.Rect(0, 0, imageInfo.Size[0], imageInfo.Size[1]))
 
-	var sizeInt = int(size)
-
-	img := image.NewRGBA(image.Rect(0, 0, sizeInt, sizeInt))
-
-	for x := 0; x < sizeInt; x++ {
-		for y := 0; y < sizeInt; y++ {
+	for x := 0; x < imageInfo.Size[0]; x++ {
+		for y := 0; y < imageInfo.Size[1]; y++ {
 			img.Set(x, y, color.Black)
 		}
 	}

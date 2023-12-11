@@ -10,7 +10,7 @@ import (
 func InitHandler() http.Handler {
 	router := gin.New()
 
-	router.NoRoute(middleware.SplitPath, generateImage)
+	router.NoRoute(middleware.ParseURL, generateImage)
 
 	return router
 }
