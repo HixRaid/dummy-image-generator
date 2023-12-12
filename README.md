@@ -11,22 +11,22 @@ Dummy Image allows you to dynamically create and return images of various sizes,
 ### Formats
 
 - Size: `100x100` `100` `hd` ...
-- Color: `#ffffff` `rgb(255, 255, 255)`
+- Color: `ffffff` `255,255,255`
 - Image: `png` `jpeg` `svg`
 
 Examples
 
 ```
-http://127.0.0.1:8080/800x800/#ffffff/#000000/png&text="Hello world"
+http://127.0.0.1:8080/800x800/fff/000/png&text="Hello world"
 ```
 
 > size, background_color, text_color, format, text
 
 ```
-http://127.0.0.1:8080/hd/png&text="Hello world"
+http://127.0.0.1:8080/hd/f1e2d3/png&text="Hello world"
 ```
 
-> size, format, text
+> size, background_color, format, text
 
 ```
 http://127.0.0.1:8080/400

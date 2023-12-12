@@ -2,7 +2,6 @@ package handler
 
 import (
 	"image"
-	"image/color"
 	"image/png"
 	"io"
 	"net/http"
@@ -23,7 +22,7 @@ func generateImage(ctx *gin.Context) {
 
 	for x := 0; x < imageInfo.Size[0]; x++ {
 		for y := 0; y < imageInfo.Size[1]; y++ {
-			img.Set(x, y, color.Black)
+			img.Set(x, y, imageInfo.BackgroundColor)
 		}
 	}
 

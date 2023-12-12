@@ -20,6 +20,10 @@ func ParseURL(ctx *gin.Context) {
 	imageInfo.Size = parseSize(path)
 	imageInfo.Text = ctx.Query("text")
 
+	backgroundColor, textColor := parseImageColors(path)
+	imageInfo.BackgroundColor = backgroundColor
+	imageInfo.TextColor = textColor
+
 	ctx.Set(imageInfoCtx, imageInfo)
 }
 
