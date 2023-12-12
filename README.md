@@ -11,8 +11,13 @@ Dummy Image allows you to dynamically create and return images of various sizes,
 ### Formats
 
 - Size: `100x100` `100` `hd` ...
-- Color: `ffffff` `255,255,255`
+- Color: `fff` `ffffff` `255,255,255`
 - Image: `png` `jpeg` `svg`
+
+### Limits
+
+- Min size: `10x10`
+- Max size: `2000x2000`
 
 Examples
 
