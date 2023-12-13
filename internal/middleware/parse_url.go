@@ -2,10 +2,12 @@ package middleware
 
 import (
 	"errors"
+	"net/http"
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/hixraid/dummy-image/internal/data"
+	"github.com/hixraid/dummy-image/internal/response"
+	"github.com/hixraid/dummy-image/pkg/data"
 )
 
 const (
@@ -17,12 +19,22 @@ func ParseURL(ctx *gin.Context) {
 
 	path := strings.Split(strings.Trim(ctx.Request.URL.Path, "/"), "/")
 
-	imageInfo.Size = parseSize(path)
+	if len(path) > 4 {
+		return
+	}
+
 	imageInfo.Text = ctx.Query("text")
+	imageInfo.Size = parseSize(path)
 
 	backgroundColor, textColor := parseImageColors(path)
 	imageInfo.BackgroundColor = backgroundColor
 	imageInfo.TextColor = textColor
+
+	format, err := parseFormat(path)
+	if len(path) == 4 && err != nil {
+		response.NewErrorResponse(ctx, http.StatusBadRequest, err.Error())
+	}
+	imageInfo.Format = format
 
 	ctx.Set(imageInfoCtx, imageInfo)
 }
