@@ -7,9 +7,9 @@ import (
 )
 
 var formats = map[string]data.ImageFormat{
-	"png":  data.PNGFormat,
-	"jpeg": data.JPEGFormat,
-	"svg":  data.SVGFormat,
+	"png":  data.PNG,
+	"jpeg": data.JPEG,
+	"svg":  data.SVG,
 }
 
 func ParseFormat(s string) (data.ImageFormat, error) {

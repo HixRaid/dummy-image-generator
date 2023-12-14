@@ -10,5 +10,5 @@ func parseFormat(path []string) (format data.ImageFormat, err error) {
 		return
 	}
 
-	return data.PNGFormat, err
+	return data.PNG, err
 }

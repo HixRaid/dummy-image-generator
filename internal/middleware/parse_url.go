@@ -11,7 +11,8 @@ import (
 )
 
 const (
-	imageInfoCtx = "image_info"
+	imageFormatCtx = "image_format"
+	imageInfoCtx   = "image_info"
 )
 
 func ParseURL(ctx *gin.Context) {
@@ -33,10 +34,25 @@ func ParseURL(ctx *gin.Context) {
 	format, err := parseFormat(path)
 	if len(path) == 4 && err != nil {
 		response.NewErrorResponse(ctx, http.StatusBadRequest, err.Error())
+		return
 	}
-	imageInfo.Format = format
 
+	ctx.Set(imageFormatCtx, format)
 	ctx.Set(imageInfoCtx, imageInfo)
+}
+
+func GetImageFormat(ctx *gin.Context) (*data.ImageFormat, error) {
+	v, ok := ctx.Get(imageFormatCtx)
+	if !ok {
+		return nil, errors.New("not found image_format")
+	}
+
+	imageFormat, ok := v.(*data.ImageFormat)
+	if !ok {
+		return nil, errors.New("invalid type image_format")
+	}
+
+	return imageFormat, nil
 }
 
 func GetImageInfo(ctx *gin.Context) (*data.ImageInfo, error) {
