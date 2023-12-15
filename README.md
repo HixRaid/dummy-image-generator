@@ -2,7 +2,7 @@
 
 Dummy Image allows you to dynamically create and return images of various sizes, colors and styles, providing flexible customization of image generation through a simple and user-friendly URL interface.
 
-> still in development
+> Still in development
 
 ## 📃 URL
 
@@ -10,7 +10,7 @@ Dummy Image allows you to dynamically create and return images of various sizes,
 
 ### Formats
 
-- Size: `100x100` `100` `hd` ...
+- Size: `100x100` `100` `HD` [and other...](RESOLUTIONS.md)
 - Color: `fff` `ffffff` `255,255,255`
 - Image: `png` `jpeg` `svg`
 
