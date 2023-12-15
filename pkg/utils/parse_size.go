@@ -1,7 +1,6 @@
 package utils
 
 import (
-	"errors"
 	"regexp"
 	"strconv"
 	"strings"
@@ -57,17 +56,9 @@ func ParseSize(s string) (size data.ImageResolution) {
 		y, _ := strconv.ParseInt(s[1], 10, 64)
 
 		size = [2]int{int(x), int(y)}
-	} else {
-		size, _ = ParseResolution(s)
+	} else if resolution, ok := resolutions[s]; ok {
+		size = resolution
 	}
 
 	return
-}
-
-func ParseResolution(s string) (data.ImageResolution, error) {
-	if resolution, ok := resolutions[s]; ok {
-		return resolution, nil
-	}
-
-	return [2]int{0, 0}, errors.New("invalid image resolution")
 }
