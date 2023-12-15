@@ -6,148 +6,148 @@ http://127.0.0.1:8080/SVGA/IndianRed/LightYellow/PNG&text="All good"
 
 > More may be added in the future
 
-| Name                 |                 Color `HEX`                 |
-| :------------------- | :-----------------------------------------: |
-| IndianRed            | <snap style="color: #CD5C5C">#CD5C5C</snap> |
-| LightCoral           | <snap style="color: #F08080">#F08080</snap> |
-| Salmon               | <snap style="color: #FA8072">#FA8072</snap> |
-| DarkSalmon           | <snap style="color: #E9967A">#E9967A</snap> |
-| LightSalmon          | <snap style="color: #FFA07A">#FFA07A</snap> |
-| Crimson              | <snap style="color: #DC143C">#DC143C</snap> |
-| Red                  | <snap style="color: #FF0000">#FF0000</snap> |
-| FireBrick            | <snap style="color: #B22222">#B22222</snap> |
-| DarkRed              | <snap style="color: #8B0000">#8B0000</snap> |
-| Pink                 | <snap style="color: #FFC0CB">#FFC0CB</snap> |
-| LightPink            | <snap style="color: #FFB6C1">#FFB6C1</snap> |
-| HotPink              | <snap style="color: #FF69B4">#FF69B4</snap> |
-| DeepPink             | <snap style="color: #FF1493">#FF1493</snap> |
-| MediumVioletRed      | <snap style="color: #C71585">#C71585</snap> |
-| PaleVioletRed        | <snap style="color: #DB7093">#DB7093</snap> |
-| LightSalmon          | <snap style="color: #FFA07A">#FFA07A</snap> |
-| Coral                | <snap style="color: #FF7F50">#FF7F50</snap> |
-| Tomato               | <snap style="color: #FF6347">#FF6347</snap> |
-| OrangeRed            | <snap style="color: #FF4500">#FF4500</snap> |
-| DarkOrange           | <snap style="color: #FF8C00">#FF8C00</snap> |
-| Orange               | <snap style="color: #FFA500">#FFA500</snap> |
-| Gold                 | <snap style="color: #FFD700">#FFD700</snap> |
-| Yellow               | <snap style="color: #FFFF00">#FFFF00</snap> |
-| LightYellow          | <snap style="color: #FFFFE0">#FFFFE0</snap> |
-| LemonChiffon         | <snap style="color: #FFFACD">#FFFACD</snap> |
-| LightGoldenrodYellow | <snap style="color: #FAFAD2">#FAFAD2</snap> |
-| PapayaWhip           | <snap style="color: #FFEFD5">#FFEFD5</snap> |
-| Moccasin             | <snap style="color: #FFE4B5">#FFE4B5</snap> |
-| PeachPuff            | <snap style="color: #FFDAB9">#FFDAB9</snap> |
-| PaleGoldenrod        | <snap style="color: #EEE8AA">#EEE8AA</snap> |
-| Khaki                | <snap style="color: #F0E68C">#F0E68C</snap> |
-| DarkKhaki            | <snap style="color: #BDB76B">#BDB76B</snap> |
-| Lavender             | <snap style="color: #E6E6FA">#E6E6FA</snap> |
-| Thistle              | <snap style="color: #D8BFD8">#D8BFD8</snap> |
-| Plum                 | <snap style="color: #DDA0DD">#DDA0DD</snap> |
-| Violet               | <snap style="color: #EE82EE">#EE82EE</snap> |
-| Orchid               | <snap style="color: #DA70D6">#DA70D6</snap> |
-| Fuchsia              | <snap style="color: #FF00FF">#FF00FF</snap> |
-| Magenta              | <snap style="color: #FF00FF">#FF00FF</snap> |
-| MediumOrchid         | <snap style="color: #BA55D3">#BA55D3</snap> |
-| MediumPurple         | <snap style="color: #9370DB">#9370DB</snap> |
-| RebeccaPurple        | <snap style="color: #663399">#663399</snap> |
-| BlueViolet           | <snap style="color: #8A2BE2">#8A2BE2</snap> |
-| DarkViolet           | <snap style="color: #9400D3">#9400D3</snap> |
-| DarkOrchid           | <snap style="color: #9932CC">#9932CC</snap> |
-| DarkMagenta          | <snap style="color: #8B008B">#8B008B</snap> |
-| Purple               | <snap style="color: #800080">#800080</snap> |
-| Indigo               | <snap style="color: #4B0082">#4B0082</snap> |
-| SlateBlue            | <snap style="color: #6A5ACD">#6A5ACD</snap> |
-| DarkSlateBlue        | <snap style="color: #483D8B">#483D8B</snap> |
-| MediumSlateBlue      | <snap style="color: #7B68EE">#7B68EE</snap> |
-| GreenYellow          | <snap style="color: #ADFF2F">#ADFF2F</snap> |
-| Chartreuse           | <snap style="color: #7FFF00">#7FFF00</snap> |
-| LawnGreen            | <snap style="color: #7CFC00">#7CFC00</snap> |
-| Lime                 | <snap style="color: #00FF00">#00FF00</snap> |
-| LimeGreen            | <snap style="color: #32CD32">#32CD32</snap> |
-| PaleGreen            | <snap style="color: #98FB98">#98FB98</snap> |
-| LightGreen           | <snap style="color: #90EE90">#90EE90</snap> |
-| MediumSpringGreen    | <snap style="color: #00FA9A">#00FA9A</snap> |
-| SpringGreen          | <snap style="color: #00FF7F">#00FF7F</snap> |
-| MediumSeaGreen       | <snap style="color: #3CB371">#3CB371</snap> |
-| SeaGreen             | <snap style="color: #2E8B57">#2E8B57</snap> |
-| ForestGreen          | <snap style="color: #228B22">#228B22</snap> |
-| Green                | <snap style="color: #008000">#008000</snap> |
-| DarkGreen            | <snap style="color: #006400">#006400</snap> |
-| YellowGreen          | <snap style="color: #9ACD32">#9ACD32</snap> |
-| OliveDrab            | <snap style="color: #6B8E23">#6B8E23</snap> |
-| Olive                | <snap style="color: #808000">#808000</snap> |
-| DarkOliveGreen       | <snap style="color: #556B2F">#556B2F</snap> |
-| MediumAquamarine     | <snap style="color: #66CDAA">#66CDAA</snap> |
-| DarkSeaGreen         | <snap style="color: #8FBC8B">#8FBC8B</snap> |
-| LightSeaGreen        | <snap style="color: #20B2AA">#20B2AA</snap> |
-| DarkCyan             | <snap style="color: #008B8B">#008B8B</snap> |
-| Teal                 | <snap style="color: #008080">#008080</snap> |
-| Aqua                 | <snap style="color: #00FFFF">#00FFFF</snap> |
-| Cyan                 | <snap style="color: #00FFFF">#00FFFF</snap> |
-| LightCyan            | <snap style="color: #E0FFFF">#E0FFFF</snap> |
-| PaleTurquoise        | <snap style="color: #AFEEEE">#AFEEEE</snap> |
-| Aquamarine           | <snap style="color: #7FFFD4">#7FFFD4</snap> |
-| Turquoise            | <snap style="color: #40E0D0">#40E0D0</snap> |
-| MediumTurquoise      | <snap style="color: #48D1CC">#48D1CC</snap> |
-| DarkTurquoise        | <snap style="color: #00CED1">#00CED1</snap> |
-| CadetBlue            | <snap style="color: #5F9EA0">#5F9EA0</snap> |
-| SteelBlue            | <snap style="color: #4682B4">#4682B4</snap> |
-| LightSteelBlue       | <snap style="color: #B0C4DE">#B0C4DE</snap> |
-| PowderBlue           | <snap style="color: #B0E0E6">#B0E0E6</snap> |
-| LightBlue            | <snap style="color: #ADD8E6">#ADD8E6</snap> |
-| SkyBlue              | <snap style="color: #87CEEB">#87CEEB</snap> |
-| LightSkyBlue         | <snap style="color: #87CEFA">#87CEFA</snap> |
-| DeepSkyBlue          | <snap style="color: #00BFFF">#00BFFF</snap> |
-| DodgerBlue           | <snap style="color: #1E90FF">#1E90FF</snap> |
-| CornflowerBlue       | <snap style="color: #6495ED">#6495ED</snap> |
-| MediumSlateBlue      | <snap style="color: #7B68EE">#7B68EE</snap> |
-| RoyalBlue            | <snap style="color: #4169E1">#4169E1</snap> |
-| Blue                 | <snap style="color: #0000FF">#0000FF</snap> |
-| MediumBlue           | <snap style="color: #0000CD">#0000CD</snap> |
-| DarkBlue             | <snap style="color: #00008B">#00008B</snap> |
-| Navy                 | <snap style="color: #000080">#000080</snap> |
-| MidnightBlue         | <snap style="color: #191970">#191970</snap> |
-| Cornsilk             | <snap style="color: #FFF8DC">#FFF8DC</snap> |
-| BlanchedAlmond       | <snap style="color: #FFEBCD">#FFEBCD</snap> |
-| Bisque               | <snap style="color: #FFE4C4">#FFE4C4</snap> |
-| NavajoWhite          | <snap style="color: #FFDEAD">#FFDEAD</snap> |
-| Wheat                | <snap style="color: #F5DEB3">#F5DEB3</snap> |
-| BurlyWood            | <snap style="color: #DEB887">#DEB887</snap> |
-| Tan                  | <snap style="color: #D2B48C">#D2B48C</snap> |
-| RosyBrown            | <snap style="color: #BC8F8F">#BC8F8F</snap> |
-| SandyBrown           | <snap style="color: #F4A460">#F4A460</snap> |
-| Goldenrod            | <snap style="color: #DAA520">#DAA520</snap> |
-| DarkGoldenrod        | <snap style="color: #B8860B">#B8860B</snap> |
-| Peru                 | <snap style="color: #CD853F">#CD853F</snap> |
-| Chocolate            | <snap style="color: #D2691E">#D2691E</snap> |
-| SaddleBrown          | <snap style="color: #8B4513">#8B4513</snap> |
-| Sienna               | <snap style="color: #A0522D">#A0522D</snap> |
-| Brown                | <snap style="color: #A52A2A">#A52A2A</snap> |
-| Maroon               | <snap style="color: #800000">#800000</snap> |
-| White                | <snap style="color: #FFFFFF">#FFFFFF</snap> |
-| Snow                 | <snap style="color: #FFFAFA">#FFFAFA</snap> |
-| HoneyDew             | <snap style="color: #F0FFF0">#F0FFF0</snap> |
-| MintCream            | <snap style="color: #F5FFFA">#F5FFFA</snap> |
-| Azure                | <snap style="color: #F0FFFF">#F0FFFF</snap> |
-| AliceBlue            | <snap style="color: #F0F8FF">#F0F8FF</snap> |
-| GhostWhite           | <snap style="color: #F8F8FF">#F8F8FF</snap> |
-| WhiteSmoke           | <snap style="color: #F5F5F5">#F5F5F5</snap> |
-| SeaShell             | <snap style="color: #FFF5EE">#FFF5EE</snap> |
-| Beige                | <snap style="color: #F5F5DC">#F5F5DC</snap> |
-| OldLace              | <snap style="color: #FDF5E6">#FDF5E6</snap> |
-| FloralWhite          | <snap style="color: #FFFAF0">#FFFAF0</snap> |
-| Ivory                | <snap style="color: #FFFFF0">#FFFFF0</snap> |
-| AntiqueWhite         | <snap style="color: #FAEBD7">#FAEBD7</snap> |
-| Linen                | <snap style="color: #FAF0E6">#FAF0E6</snap> |
-| LavenderBlush        | <snap style="color: #FFF0F5">#FFF0F5</snap> |
-| MistyRose            | <snap style="color: #FFE4E1">#FFE4E1</snap> |
-| Gainsboro            | <snap style="color: #DCDCDC">#DCDCDC</snap> |
-| LightGray            | <snap style="color: #D3D3D3">#D3D3D3</snap> |
-| Silver               | <snap style="color: #C0C0C0">#C0C0C0</snap> |
-| DarkGray             | <snap style="color: #A9A9A9">#A9A9A9</snap> |
-| Gray                 | <snap style="color: #808080">#808080</snap> |
-| DimGray              | <snap style="color: #696969">#696969</snap> |
-| LightSlateGray       | <snap style="color: #778899">#778899</snap> |
-| SlateGray            | <snap style="color: #708090">#708090</snap> |
-| DarkSlateGray        | <snap style="color: #2F4F4F">#2F4F4F</snap> |
-| Black                | <snap style="color: #00000">#00000 </snap>  |
+| Name                 | Color `HEX` |
+| :------------------- | :---------: |
+| IndianRed            |  `#CD5C5C`  |
+| LightCoral           |  `#F08080`  |
+| Salmon               |  `#FA8072`  |
+| DarkSalmon           |  `#E9967A`  |
+| LightSalmon          |  `#FFA07A`  |
+| Crimson              |  `#DC143C`  |
+| Red                  |  `#FF0000`  |
+| FireBrick            |  `#B22222`  |
+| DarkRed              |  `#8B0000`  |
+| Pink                 |  `#FFC0CB`  |
+| LightPink            |  `#FFB6C1`  |
+| HotPink              |  `#FF69B4`  |
+| DeepPink             |  `#FF1493`  |
+| MediumVioletRed      |  `#C71585`  |
+| PaleVioletRed        |  `#DB7093`  |
+| LightSalmon          |  `#FFA07A`  |
+| Coral                |  `#FF7F50`  |
+| Tomato               |  `#FF6347`  |
+| OrangeRed            |  `#FF4500`  |
+| DarkOrange           |  `#FF8C00`  |
+| Orange               |  `#FFA500`  |
+| Gold                 |  `#FFD700`  |
+| Yellow               |  `#FFFF00`  |
+| LightYellow          |  `#FFFFE0`  |
+| LemonChiffon         |  `#FFFACD`  |
+| LightGoldenrodYellow |  `#FAFAD2`  |
+| PapayaWhip           |  `#FFEFD5`  |
+| Moccasin             |  `#FFE4B5`  |
+| PeachPuff            |  `#FFDAB9`  |
+| PaleGoldenrod        |  `#EEE8AA`  |
+| Khaki                |  `#F0E68C`  |
+| DarkKhaki            |  `#BDB76B`  |
+| Lavender             |  `#E6E6FA`  |
+| Thistle              |  `#D8BFD8`  |
+| Plum                 |  `#DDA0DD`  |
+| Violet               |  `#EE82EE`  |
+| Orchid               |  `#DA70D6`  |
+| Fuchsia              |  `#FF00FF`  |
+| Magenta              |  `#FF00FF`  |
+| MediumOrchid         |  `#BA55D3`  |
+| MediumPurple         |  `#9370DB`  |
+| RebeccaPurple        |  `#663399`  |
+| BlueViolet           |  `#8A2BE2`  |
+| DarkViolet           |  `#9400D3`  |
+| DarkOrchid           |  `#9932CC`  |
+| DarkMagenta          |  `#8B008B`  |
+| Purple               |  `#800080`  |
+| Indigo               |  `#4B0082`  |
+| SlateBlue            |  `#6A5ACD`  |
+| DarkSlateBlue        |  `#483D8B`  |
+| MediumSlateBlue      |  `#7B68EE`  |
+| GreenYellow          |  `#ADFF2F`  |
+| Chartreuse           |  `#7FFF00`  |
+| LawnGreen            |  `#7CFC00`  |
+| Lime                 |  `#00FF00`  |
+| LimeGreen            |  `#32CD32`  |
+| PaleGreen            |  `#98FB98`  |
+| LightGreen           |  `#90EE90`  |
+| MediumSpringGreen    |  `#00FA9A`  |
+| SpringGreen          |  `#00FF7F`  |
+| MediumSeaGreen       |  `#3CB371`  |
+| SeaGreen             |  `#2E8B57`  |
+| ForestGreen          |  `#228B22`  |
+| Green                |  `#008000`  |
+| DarkGreen            |  `#006400`  |
+| YellowGreen          |  `#9ACD32`  |
+| OliveDrab            |  `#6B8E23`  |
+| Olive                |  `#808000`  |
+| DarkOliveGreen       |  `#556B2F`  |
+| MediumAquamarine     |  `#66CDAA`  |
+| DarkSeaGreen         |  `#8FBC8B`  |
+| LightSeaGreen        |  `#20B2AA`  |
+| DarkCyan             |  `#008B8B`  |
+| Teal                 |  `#008080`  |
+| Aqua                 |  `#00FFFF`  |
+| Cyan                 |  `#00FFFF`  |
+| LightCyan            |  `#E0FFFF`  |
+| PaleTurquoise        |  `#AFEEEE`  |
+| Aquamarine           |  `#7FFFD4`  |
+| Turquoise            |  `#40E0D0`  |
+| MediumTurquoise      |  `#48D1CC`  |
+| DarkTurquoise        |  `#00CED1`  |
+| CadetBlue            |  `#5F9EA0`  |
+| SteelBlue            |  `#4682B4`  |
+| LightSteelBlue       |  `#B0C4DE`  |
+| PowderBlue           |  `#B0E0E6`  |
+| LightBlue            |  `#ADD8E6`  |
+| SkyBlue              |  `#87CEEB`  |
+| LightSkyBlue         |  `#87CEFA`  |
+| DeepSkyBlue          |  `#00BFFF`  |
+| DodgerBlue           |  `#1E90FF`  |
+| CornflowerBlue       |  `#6495ED`  |
+| MediumSlateBlue      |  `#7B68EE`  |
+| RoyalBlue            |  `#4169E1`  |
+| Blue                 |  `#0000FF`  |
+| MediumBlue           |  `#0000CD`  |
+| DarkBlue             |  `#00008B`  |
+| Navy                 |  `#000080`  |
+| MidnightBlue         |  `#191970`  |
+| Cornsilk             |  `#FFF8DC`  |
+| BlanchedAlmond       |  `#FFEBCD`  |
+| Bisque               |  `#FFE4C4`  |
+| NavajoWhite          |  `#FFDEAD`  |
+| Wheat                |  `#F5DEB3`  |
+| BurlyWood            |  `#DEB887`  |
+| Tan                  |  `#D2B48C`  |
+| RosyBrown            |  `#BC8F8F`  |
+| SandyBrown           |  `#F4A460`  |
+| Goldenrod            |  `#DAA520`  |
+| DarkGoldenrod        |  `#B8860B`  |
+| Peru                 |  `#CD853F`  |
+| Chocolate            |  `#D2691E`  |
+| SaddleBrown          |  `#8B4513`  |
+| Sienna               |  `#A0522D`  |
+| Brown                |  `#A52A2A`  |
+| Maroon               |  `#800000`  |
+| White                |  `#FFFFFF`  |
+| Snow                 |  `#FFFAFA`  |
+| HoneyDew             |  `#F0FFF0`  |
+| MintCream            |  `#F5FFFA`  |
+| Azure                |  `#F0FFFF`  |
+| AliceBlue            |  `#F0F8FF`  |
+| GhostWhite           |  `#F8F8FF`  |
+| WhiteSmoke           |  `#F5F5F5`  |
+| SeaShell             |  `#FFF5EE`  |
+| Beige                |  `#F5F5DC`  |
+| OldLace              |  `#FDF5E6`  |
+| FloralWhite          |  `#FFFAF0`  |
+| Ivory                |  `#FFFFF0`  |
+| AntiqueWhite         |  `#FAEBD7`  |
+| Linen                |  `#FAF0E6`  |
+| LavenderBlush        |  `#FFF0F5`  |
+| MistyRose            |  `#FFE4E1`  |
+| Gainsboro            |  `#DCDCDC`  |
+| LightGray            |  `#D3D3D3`  |
+| Silver               |  `#C0C0C0`  |
+| DarkGray             |  `#A9A9A9`  |
+| Gray                 |  `#808080`  |
+| DimGray              |  `#696969`  |
+| LightSlateGray       |  `#778899`  |
+| SlateGray            |  `#708090`  |
+| DarkSlateGray        |  `#2F4F4F`  |
+| Black                |  `#000000`  |
