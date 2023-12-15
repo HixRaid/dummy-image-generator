@@ -6,148 +6,148 @@ http://127.0.0.1:8080/SVGA/IndianRed/LightYellow/PNG&text="All good"
 
 > More may be added in the future
 
-| Name                 | Color `HEX` |
-| :------------------- | :---------: |
-| IndianRed            |  `#CD5C5C`  |
-| LightCoral           |  `#F08080`  |
-| Salmon               |  `#FA8072`  |
-| DarkSalmon           |  `#E9967A`  |
-| LightSalmon          |  `#FFA07A`  |
-| Crimson              |  `#DC143C`  |
-| Red                  |  `#FF0000`  |
-| FireBrick            |  `#B22222`  |
-| DarkRed              |  `#8B0000`  |
-| Pink                 |  `#FFC0CB`  |
-| LightPink            |  `#FFB6C1`  |
-| HotPink              |  `#FF69B4`  |
-| DeepPink             |  `#FF1493`  |
-| MediumVioletRed      |  `#C71585`  |
-| PaleVioletRed        |  `#DB7093`  |
-| LightSalmon          |  `#FFA07A`  |
-| Coral                |  `#FF7F50`  |
-| Tomato               |  `#FF6347`  |
-| OrangeRed            |  `#FF4500`  |
-| DarkOrange           |  `#FF8C00`  |
-| Orange               |  `#FFA500`  |
-| Gold                 |  `#FFD700`  |
-| Yellow               |  `#FFFF00`  |
-| LightYellow          |  `#FFFFE0`  |
-| LemonChiffon         |  `#FFFACD`  |
-| LightGoldenrodYellow |  `#FAFAD2`  |
-| PapayaWhip           |  `#FFEFD5`  |
-| Moccasin             |  `#FFE4B5`  |
-| PeachPuff            |  `#FFDAB9`  |
-| PaleGoldenrod        |  `#EEE8AA`  |
-| Khaki                |  `#F0E68C`  |
-| DarkKhaki            |  `#BDB76B`  |
-| Lavender             |  `#E6E6FA`  |
-| Thistle              |  `#D8BFD8`  |
-| Plum                 |  `#DDA0DD`  |
-| Violet               |  `#EE82EE`  |
-| Orchid               |  `#DA70D6`  |
-| Fuchsia              |  `#FF00FF`  |
-| Magenta              |  `#FF00FF`  |
-| MediumOrchid         |  `#BA55D3`  |
-| MediumPurple         |  `#9370DB`  |
-| RebeccaPurple        |  `#663399`  |
-| BlueViolet           |  `#8A2BE2`  |
-| DarkViolet           |  `#9400D3`  |
-| DarkOrchid           |  `#9932CC`  |
-| DarkMagenta          |  `#8B008B`  |
-| Purple               |  `#800080`  |
-| Indigo               |  `#4B0082`  |
-| SlateBlue            |  `#6A5ACD`  |
-| DarkSlateBlue        |  `#483D8B`  |
-| MediumSlateBlue      |  `#7B68EE`  |
-| GreenYellow          |  `#ADFF2F`  |
-| Chartreuse           |  `#7FFF00`  |
-| LawnGreen            |  `#7CFC00`  |
-| Lime                 |  `#00FF00`  |
-| LimeGreen            |  `#32CD32`  |
-| PaleGreen            |  `#98FB98`  |
-| LightGreen           |  `#90EE90`  |
-| MediumSpringGreen    |  `#00FA9A`  |
-| SpringGreen          |  `#00FF7F`  |
-| MediumSeaGreen       |  `#3CB371`  |
-| SeaGreen             |  `#2E8B57`  |
-| ForestGreen          |  `#228B22`  |
-| Green                |  `#008000`  |
-| DarkGreen            |  `#006400`  |
-| YellowGreen          |  `#9ACD32`  |
-| OliveDrab            |  `#6B8E23`  |
-| Olive                |  `#808000`  |
-| DarkOliveGreen       |  `#556B2F`  |
-| MediumAquamarine     |  `#66CDAA`  |
-| DarkSeaGreen         |  `#8FBC8B`  |
-| LightSeaGreen        |  `#20B2AA`  |
-| DarkCyan             |  `#008B8B`  |
-| Teal                 |  `#008080`  |
-| Aqua                 |  `#00FFFF`  |
-| Cyan                 |  `#00FFFF`  |
-| LightCyan            |  `#E0FFFF`  |
-| PaleTurquoise        |  `#AFEEEE`  |
-| Aquamarine           |  `#7FFFD4`  |
-| Turquoise            |  `#40E0D0`  |
-| MediumTurquoise      |  `#48D1CC`  |
-| DarkTurquoise        |  `#00CED1`  |
-| CadetBlue            |  `#5F9EA0`  |
-| SteelBlue            |  `#4682B4`  |
-| LightSteelBlue       |  `#B0C4DE`  |
-| PowderBlue           |  `#B0E0E6`  |
-| LightBlue            |  `#ADD8E6`  |
-| SkyBlue              |  `#87CEEB`  |
-| LightSkyBlue         |  `#87CEFA`  |
-| DeepSkyBlue          |  `#00BFFF`  |
-| DodgerBlue           |  `#1E90FF`  |
-| CornflowerBlue       |  `#6495ED`  |
-| MediumSlateBlue      |  `#7B68EE`  |
-| RoyalBlue            |  `#4169E1`  |
-| Blue                 |  `#0000FF`  |
-| MediumBlue           |  `#0000CD`  |
-| DarkBlue             |  `#00008B`  |
-| Navy                 |  `#000080`  |
-| MidnightBlue         |  `#191970`  |
-| Cornsilk             |  `#FFF8DC`  |
-| BlanchedAlmond       |  `#FFEBCD`  |
-| Bisque               |  `#FFE4C4`  |
-| NavajoWhite          |  `#FFDEAD`  |
-| Wheat                |  `#F5DEB3`  |
-| BurlyWood            |  `#DEB887`  |
-| Tan                  |  `#D2B48C`  |
-| RosyBrown            |  `#BC8F8F`  |
-| SandyBrown           |  `#F4A460`  |
-| Goldenrod            |  `#DAA520`  |
-| DarkGoldenrod        |  `#B8860B`  |
-| Peru                 |  `#CD853F`  |
-| Chocolate            |  `#D2691E`  |
-| SaddleBrown          |  `#8B4513`  |
-| Sienna               |  `#A0522D`  |
-| Brown                |  `#A52A2A`  |
-| Maroon               |  `#800000`  |
-| White                |  `#FFFFFF`  |
-| Snow                 |  `#FFFAFA`  |
-| HoneyDew             |  `#F0FFF0`  |
-| MintCream            |  `#F5FFFA`  |
-| Azure                |  `#F0FFFF`  |
-| AliceBlue            |  `#F0F8FF`  |
-| GhostWhite           |  `#F8F8FF`  |
-| WhiteSmoke           |  `#F5F5F5`  |
-| SeaShell             |  `#FFF5EE`  |
-| Beige                |  `#F5F5DC`  |
-| OldLace              |  `#FDF5E6`  |
-| FloralWhite          |  `#FFFAF0`  |
-| Ivory                |  `#FFFFF0`  |
-| AntiqueWhite         |  `#FAEBD7`  |
-| Linen                |  `#FAF0E6`  |
-| LavenderBlush        |  `#FFF0F5`  |
-| MistyRose            |  `#FFE4E1`  |
-| Gainsboro            |  `#DCDCDC`  |
-| LightGray            |  `#D3D3D3`  |
-| Silver               |  `#C0C0C0`  |
-| DarkGray             |  `#A9A9A9`  |
-| Gray                 |  `#808080`  |
-| DimGray              |  `#696969`  |
-| LightSlateGray       |  `#778899`  |
-| SlateGray            |  `#708090`  |
-| DarkSlateGray        |  `#2F4F4F`  |
-| Black                |  `#000000`  |
+| Name                 | Color `HEX` |                             Example                             |
+| :------------------- | :---------- | :-------------------------------------------------------------: |
+| IndianRed            | `#CD5C5C`   | ![#CD5C5C](https://via.placeholder.com/15/cd5c5c/000000?text=+) |
+| LightCoral           | `#F08080`   | ![#F08080](https://via.placeholder.com/15/f08080/000000?text=+) |
+| Salmon               | `#FA8072`   | ![#FA8072](https://via.placeholder.com/15/fa8072/000000?text=+) |
+| DarkSalmon           | `#E9967A`   | ![#E9967A](https://via.placeholder.com/15/e9967a/000000?text=+) |
+| LightSalmon          | `#FFA07A`   | ![#FFA07A](https://via.placeholder.com/15/ffa07a/000000?text=+) |
+| Crimson              | `#DC143C`   | ![#DC143C](https://via.placeholder.com/15/dc143c/000000?text=+) |
+| Red                  | `#FF0000`   | ![#FF0000](https://via.placeholder.com/15/ff0000/000000?text=+) |
+| FireBrick            | `#B22222`   | ![#B22222](https://via.placeholder.com/15/b22222/000000?text=+) |
+| DarkRed              | `#8B0000`   | ![#8B0000](https://via.placeholder.com/15/8b0000/000000?text=+) |
+| Pink                 | `#FFC0CB`   | ![#FFC0CB](https://via.placeholder.com/15/ffc0cb/000000?text=+) |
+| LightPink            | `#FFB6C1`   | ![#FFB6C1](https://via.placeholder.com/15/ffb6c1/000000?text=+) |
+| HotPink              | `#FF69B4`   | ![#FF69B4](https://via.placeholder.com/15/ff69b4/000000?text=+) |
+| DeepPink             | `#FF1493`   | ![#FF1493](https://via.placeholder.com/15/ff1493/000000?text=+) |
+| MediumVioletRed      | `#C71585`   | ![#C71585](https://via.placeholder.com/15/c71585/000000?text=+) |
+| PaleVioletRed        | `#DB7093`   | ![#DB7093](https://via.placeholder.com/15/db7093/000000?text=+) |
+| LightSalmon          | `#FFA07A`   | ![#FFA07A](https://via.placeholder.com/15/ffa07a/000000?text=+) |
+| Coral                | `#FF7F50`   | ![#FF7F50](https://via.placeholder.com/15/ff7f50/000000?text=+) |
+| Tomato               | `#FF6347`   | ![#FF6347](https://via.placeholder.com/15/ff6347/000000?text=+) |
+| OrangeRed            | `#FF4500`   | ![#FF4500](https://via.placeholder.com/15/ff4500/000000?text=+) |
+| DarkOrange           | `#FF8C00`   | ![#FF8C00](https://via.placeholder.com/15/ff8c00/000000?text=+) |
+| Orange               | `#FFA500`   | ![#FFA500](https://via.placeholder.com/15/ffa500/000000?text=+) |
+| Gold                 | `#FFD700`   | ![#FFD700](https://via.placeholder.com/15/ffd700/000000?text=+) |
+| Yellow               | `#FFFF00`   | ![#FFFF00](https://via.placeholder.com/15/ffff00/000000?text=+) |
+| LightYellow          | `#FFFFE0`   | ![#FFFFE0](https://via.placeholder.com/15/ffffe0/000000?text=+) |
+| LemonChiffon         | `#FFFACD`   | ![#FFFACD](https://via.placeholder.com/15/fffacd/000000?text=+) |
+| LightGoldenrodYellow | `#FAFAD2`   | ![#FAFAD2](https://via.placeholder.com/15/fafad2/000000?text=+) |
+| PapayaWhip           | `#FFEFD5`   | ![#FFEFD5](https://via.placeholder.com/15/ffefd5/000000?text=+) |
+| Moccasin             | `#FFE4B5`   | ![#FFE4B5](https://via.placeholder.com/15/ffe4b5/000000?text=+) |
+| PeachPuff            | `#FFDAB9`   | ![#FFDAB9](https://via.placeholder.com/15/ffdab9/000000?text=+) |
+| PaleGoldenrod        | `#EEE8AA`   | ![#EEE8AA](https://via.placeholder.com/15/eee8aa/000000?text=+) |
+| Khaki                | `#F0E68C`   | ![#F0E68C](https://via.placeholder.com/15/f0e68c/000000?text=+) |
+| DarkKhaki            | `#BDB76B`   | ![#BDB76B](https://via.placeholder.com/15/bdb76b/000000?text=+) |
+| Lavender             | `#E6E6FA`   | ![#E6E6FA](https://via.placeholder.com/15/e6e6fa/000000?text=+) |
+| Thistle              | `#D8BFD8`   | ![#D8BFD8](https://via.placeholder.com/15/d8bfd8/000000?text=+) |
+| Plum                 | `#DDA0DD`   | ![#DDA0DD](https://via.placeholder.com/15/dda0dd/000000?text=+) |
+| Violet               | `#EE82EE`   | ![#EE82EE](https://via.placeholder.com/15/ee82ee/000000?text=+) |
+| Orchid               | `#DA70D6`   | ![#DA70D6](https://via.placeholder.com/15/da70d6/000000?text=+) |
+| Fuchsia              | `#FF00FF`   | ![#FF00FF](https://via.placeholder.com/15/ff00ff/000000?text=+) |
+| Magenta              | `#FF00FF`   | ![#FF00FF](https://via.placeholder.com/15/ff00ff/000000?text=+) |
+| MediumOrchid         | `#BA55D3`   | ![#BA55D3](https://via.placeholder.com/15/ba55d3/000000?text=+) |
+| MediumPurple         | `#9370DB`   | ![#9370DB](https://via.placeholder.com/15/9370db/000000?text=+) |
+| RebeccaPurple        | `#663399`   | ![#663399](https://via.placeholder.com/15/663399/000000?text=+) |
+| BlueViolet           | `#8A2BE2`   | ![#8A2BE2](https://via.placeholder.com/15/8a2be2/000000?text=+) |
+| DarkViolet           | `#9400D3`   | ![#9400D3](https://via.placeholder.com/15/9400d3/000000?text=+) |
+| DarkOrchid           | `#9932CC`   | ![#9932CC](https://via.placeholder.com/15/9932cc/000000?text=+) |
+| DarkMagenta          | `#8B008B`   | ![#8B008B](https://via.placeholder.com/15/8b008b/000000?text=+) |
+| Purple               | `#800080`   | ![#800080](https://via.placeholder.com/15/800080/000000?text=+) |
+| Indigo               | `#4B0082`   | ![#4B0082](https://via.placeholder.com/15/4b0082/000000?text=+) |
+| SlateBlue            | `#6A5ACD`   | ![#6A5ACD](https://via.placeholder.com/15/6a5acd/000000?text=+) |
+| DarkSlateBlue        | `#483D8B`   | ![#483D8B](https://via.placeholder.com/15/483d8b/000000?text=+) |
+| MediumSlateBlue      | `#7B68EE`   | ![#7B68EE](https://via.placeholder.com/15/7b68ee/000000?text=+) |
+| GreenYellow          | `#ADFF2F`   | ![#ADFF2F](https://via.placeholder.com/15/adff2f/000000?text=+) |
+| Chartreuse           | `#7FFF00`   | ![#7FFF00](https://via.placeholder.com/15/7fff00/000000?text=+) |
+| LawnGreen            | `#7CFC00`   | ![#7CFC00](https://via.placeholder.com/15/7cfc00/000000?text=+) |
+| Lime                 | `#00FF00`   | ![#00FF00](https://via.placeholder.com/15/00ff00/000000?text=+) |
+| LimeGreen            | `#32CD32`   | ![#32CD32](https://via.placeholder.com/15/32cd32/000000?text=+) |
+| PaleGreen            | `#98FB98`   | ![#98FB98](https://via.placeholder.com/15/98fb98/000000?text=+) |
+| LightGreen           | `#90EE90`   | ![#90EE90](https://via.placeholder.com/15/90ee90/000000?text=+) |
+| MediumSpringGreen    | `#00FA9A`   | ![#00FA9A](https://via.placeholder.com/15/00fa9a/000000?text=+) |
+| SpringGreen          | `#00FF7F`   | ![#00FF7F](https://via.placeholder.com/15/00ff7f/000000?text=+) |
+| MediumSeaGreen       | `#3CB371`   | ![#3CB371](https://via.placeholder.com/15/3cb371/000000?text=+) |
+| SeaGreen             | `#2E8B57`   | ![#2E8B57](https://via.placeholder.com/15/2e8b57/000000?text=+) |
+| ForestGreen          | `#228B22`   | ![#228B22](https://via.placeholder.com/15/228b22/000000?text=+) |
+| Green                | `#008000`   | ![#008000](https://via.placeholder.com/15/008000/000000?text=+) |
+| DarkGreen            | `#006400`   | ![#006400](https://via.placeholder.com/15/006400/000000?text=+) |
+| YellowGreen          | `#9ACD32`   | ![#9ACD32](https://via.placeholder.com/15/9acd32/000000?text=+) |
+| OliveDrab            | `#6B8E23`   | ![#6B8E23](https://via.placeholder.com/15/6b8e23/000000?text=+) |
+| Olive                | `#808000`   | ![#808000](https://via.placeholder.com/15/808000/000000?text=+) |
+| DarkOliveGreen       | `#556B2F`   | ![#556B2F](https://via.placeholder.com/15/556b2f/000000?text=+) |
+| MediumAquamarine     | `#66CDAA`   | ![#66CDAA](https://via.placeholder.com/15/66cdaa/000000?text=+) |
+| DarkSeaGreen         | `#8FBC8B`   | ![#8FBC8B](https://via.placeholder.com/15/8fbc8b/000000?text=+) |
+| LightSeaGreen        | `#20B2AA`   | ![#20B2AA](https://via.placeholder.com/15/20b2aa/000000?text=+) |
+| DarkCyan             | `#008B8B`   | ![#008B8B](https://via.placeholder.com/15/008b8b/000000?text=+) |
+| Teal                 | `#008080`   | ![#008080](https://via.placeholder.com/15/008080/000000?text=+) |
+| Aqua                 | `#00FFFF`   | ![#00FFFF](https://via.placeholder.com/15/00ffff/000000?text=+) |
+| Cyan                 | `#00FFFF`   | ![#00FFFF](https://via.placeholder.com/15/00ffff/000000?text=+) |
+| LightCyan            | `#E0FFFF`   | ![#E0FFFF](https://via.placeholder.com/15/e0ffff/000000?text=+) |
+| PaleTurquoise        | `#AFEEEE`   | ![#AFEEEE](https://via.placeholder.com/15/afeeee/000000?text=+) |
+| Aquamarine           | `#7FFFD4`   | ![#7FFFD4](https://via.placeholder.com/15/7fffd4/000000?text=+) |
+| Turquoise            | `#40E0D0`   | ![#40E0D0](https://via.placeholder.com/15/40e0d0/000000?text=+) |
+| MediumTurquoise      | `#48D1CC`   | ![#48D1CC](https://via.placeholder.com/15/48d1cc/000000?text=+) |
+| DarkTurquoise        | `#00CED1`   | ![#00CED1](https://via.placeholder.com/15/00ced1/000000?text=+) |
+| CadetBlue            | `#5F9EA0`   | ![#5F9EA0](https://via.placeholder.com/15/5f9ea0/000000?text=+) |
+| SteelBlue            | `#4682B4`   | ![#4682B4](https://via.placeholder.com/15/4682b4/000000?text=+) |
+| LightSteelBlue       | `#B0C4DE`   | ![#B0C4DE](https://via.placeholder.com/15/b0c4de/000000?text=+) |
+| PowderBlue           | `#B0E0E6`   | ![#B0E0E6](https://via.placeholder.com/15/b0e0e6/000000?text=+) |
+| LightBlue            | `#ADD8E6`   | ![#ADD8E6](https://via.placeholder.com/15/add8e6/000000?text=+) |
+| SkyBlue              | `#87CEEB`   | ![#87CEEB](https://via.placeholder.com/15/87ceeb/000000?text=+) |
+| LightSkyBlue         | `#87CEFA`   | ![#87CEFA](https://via.placeholder.com/15/87cefa/000000?text=+) |
+| DeepSkyBlue          | `#00BFFF`   | ![#00BFFF](https://via.placeholder.com/15/00bfff/000000?text=+) |
+| DodgerBlue           | `#1E90FF`   | ![#1E90FF](https://via.placeholder.com/15/1e90ff/000000?text=+) |
+| CornflowerBlue       | `#6495ED`   | ![#6495ED](https://via.placeholder.com/15/6495ed/000000?text=+) |
+| MediumSlateBlue      | `#7B68EE`   | ![#7B68EE](https://via.placeholder.com/15/7b68ee/000000?text=+) |
+| RoyalBlue            | `#4169E1`   | ![#4169E1](https://via.placeholder.com/15/4169e1/000000?text=+) |
+| Blue                 | `#0000FF`   | ![#0000FF](https://via.placeholder.com/15/0000ff/000000?text=+) |
+| MediumBlue           | `#0000CD`   | ![#0000CD](https://via.placeholder.com/15/0000cd/000000?text=+) |
+| DarkBlue             | `#00008B`   | ![#00008B](https://via.placeholder.com/15/00008b/000000?text=+) |
+| Navy                 | `#000080`   | ![#000080](https://via.placeholder.com/15/000080/000000?text=+) |
+| MidnightBlue         | `#191970`   | ![#191970](https://via.placeholder.com/15/191970/000000?text=+) |
+| Cornsilk             | `#FFF8DC`   | ![#FFF8DC](https://via.placeholder.com/15/fff8dc/000000?text=+) |
+| BlanchedAlmond       | `#FFEBCD`   | ![#FFEBCD](https://via.placeholder.com/15/ffebcd/000000?text=+) |
+| Bisque               | `#FFE4C4`   | ![#FFE4C4](https://via.placeholder.com/15/ffe4c4/000000?text=+) |
+| NavajoWhite          | `#FFDEAD`   | ![#FFDEAD](https://via.placeholder.com/15/ffdead/000000?text=+) |
+| Wheat                | `#F5DEB3`   | ![#F5DEB3](https://via.placeholder.com/15/f5deb3/000000?text=+) |
+| BurlyWood            | `#DEB887`   | ![#DEB887](https://via.placeholder.com/15/deb887/000000?text=+) |
+| Tan                  | `#D2B48C`   | ![#D2B48C](https://via.placeholder.com/15/d2b48c/000000?text=+) |
+| RosyBrown            | `#BC8F8F`   | ![#BC8F8F](https://via.placeholder.com/15/bc8f8f/000000?text=+) |
+| SandyBrown           | `#F4A460`   | ![#F4A460](https://via.placeholder.com/15/f4a460/000000?text=+) |
+| Goldenrod            | `#DAA520`   | ![#DAA520](https://via.placeholder.com/15/daa520/000000?text=+) |
+| DarkGoldenrod        | `#B8860B`   | ![#B8860B](https://via.placeholder.com/15/b8860b/000000?text=+) |
+| Peru                 | `#CD853F`   | ![#CD853F](https://via.placeholder.com/15/cd853f/000000?text=+) |
+| Chocolate            | `#D2691E`   | ![#D2691E](https://via.placeholder.com/15/d2691e/000000?text=+) |
+| SaddleBrown          | `#8B4513`   | ![#8B4513](https://via.placeholder.com/15/8b4513/000000?text=+) |
+| Sienna               | `#A0522D`   | ![#A0522D](https://via.placeholder.com/15/a0522d/000000?text=+) |
+| Brown                | `#A52A2A`   | ![#A52A2A](https://via.placeholder.com/15/a52a2a/000000?text=+) |
+| Maroon               | `#800000`   | ![#800000](https://via.placeholder.com/15/800000/000000?text=+) |
+| White                | `#FFFFFF`   | ![#FFFFFF](https://via.placeholder.com/15/ffffff/000000?text=+) |
+| Snow                 | `#FFFAFA`   | ![#FFFAFA](https://via.placeholder.com/15/fffafa/000000?text=+) |
+| HoneyDew             | `#F0FFF0`   | ![#F0FFF0](https://via.placeholder.com/15/f0fff0/000000?text=+) |
+| MintCream            | `#F5FFFA`   | ![#F5FFFA](https://via.placeholder.com/15/f5fffa/000000?text=+) |
+| Azure                | `#F0FFFF`   | ![#F0FFFF](https://via.placeholder.com/15/f0ffff/000000?text=+) |
+| AliceBlue            | `#F0F8FF`   | ![#F0F8FF](https://via.placeholder.com/15/f0f8ff/000000?text=+) |
+| GhostWhite           | `#F8F8FF`   | ![#F8F8FF](https://via.placeholder.com/15/f8f8ff/000000?text=+) |
+| WhiteSmoke           | `#F5F5F5`   | ![#F5F5F5](https://via.placeholder.com/15/f5f5f5/000000?text=+) |
+| SeaShell             | `#FFF5EE`   | ![#FFF5EE](https://via.placeholder.com/15/fff5ee/000000?text=+) |
+| Beige                | `#F5F5DC`   | ![#F5F5DC](https://via.placeholder.com/15/f5f5dc/000000?text=+) |
+| OldLace              | `#FDF5E6`   | ![#FDF5E6](https://via.placeholder.com/15/fdf5e6/000000?text=+) |
+| FloralWhite          | `#FFFAF0`   | ![#FFFAF0](https://via.placeholder.com/15/fffaf0/000000?text=+) |
+| Ivory                | `#FFFFF0`   | ![#FFFFF0](https://via.placeholder.com/15/fffff0/000000?text=+) |
+| AntiqueWhite         | `#FAEBD7`   | ![#FAEBD7](https://via.placeholder.com/15/faebd7/000000?text=+) |
+| Linen                | `#FAF0E6`   | ![#FAF0E6](https://via.placeholder.com/15/faf0e6/000000?text=+) |
+| LavenderBlush        | `#FFF0F5`   | ![#FFF0F5](https://via.placeholder.com/15/fff0f5/000000?text=+) |
+| MistyRose            | `#FFE4E1`   | ![#FFE4E1](https://via.placeholder.com/15/ffe4e1/000000?text=+) |
+| Gainsboro            | `#DCDCDC`   | ![#DCDCDC](https://via.placeholder.com/15/dcdcdc/000000?text=+) |
+| LightGray            | `#D3D3D3`   | ![#D3D3D3](https://via.placeholder.com/15/d3d3d3/000000?text=+) |
+| Silver               | `#C0C0C0`   | ![#C0C0C0](https://via.placeholder.com/15/c0c0c0/000000?text=+) |
+| DarkGray             | `#A9A9A9`   | ![#A9A9A9](https://via.placeholder.com/15/a9a9a9/000000?text=+) |
+| Gray                 | `#808080`   | ![#808080](https://via.placeholder.com/15/808080/000000?text=+) |
+| DimGray              | `#696969`   | ![#696969](https://via.placeholder.com/15/696969/000000?text=+) |
+| LightSlateGray       | `#778899`   | ![#778899](https://via.placeholder.com/15/778899/000000?text=+) |
+| SlateGray            | `#708090`   | ![#708090](https://via.placeholder.com/15/708090/000000?text=+) |
+| DarkSlateGray        | `#2F4F4F`   | ![#2F4F4F](https://via.placeholder.com/15/2f4f4f/000000?text=+) |
+| Black                | `#000000`   | ![#000000](https://via.placeholder.com/15/000000/000000?text=+) |
