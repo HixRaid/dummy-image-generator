@@ -8,11 +8,15 @@ Dummy Image allows you to dynamically create and return images of various sizes,
 
 / `size` / `background_color` / `text_color` / `format` & `text`
 
+> Size required
+
 ### Formats
 
 - Size: `100x100` `100` `HD` [and other...](RESOLUTIONS.md)
-- Color: `fff` `ffffff` `255,255,255`
-- Image: `png` `jpeg` `svg`
+- Color: `FFF` `FFFFFF` `255,255,255`
+- Image: `PNG` `JPEG` `SVG`
+
+> Default PNG
 
 ### Limits
 
@@ -22,13 +26,13 @@ Dummy Image allows you to dynamically create and return images of various sizes,
 Examples
 
 ```
-http://127.0.0.1:8080/800x800/fff/000/png&text="Hello world"
+http://127.0.0.1:8080/800x800/FFF/000/png&text="Hello world"
 ```
 
 > size, background_color, text_color, format, text
 
 ```
-http://127.0.0.1:8080/hd/f1e2d3/png&text="Hello world"
+http://127.0.0.1:8080/HD/F1E2D3/png&text="Hello world"
 ```
 
 > size, background_color, format, text

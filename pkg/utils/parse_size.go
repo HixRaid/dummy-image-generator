@@ -16,31 +16,33 @@ const (
 )
 
 var resolutions = map[string]data.ImageResolution{
-	"QVGA":  data.QVGA,
-	"SIF":   data.SIF,
-	"CIF":   data.CIF,
-	"WQVGA": data.WQVGA,
-	"HVGA":  data.HVGA,
-	"NHD":   data.NHD,
-	"VGA":   data.VGA,
-	"WVGA":  data.WVGA,
-	"SVGA":  data.SVGA,
-	"FWVGA": data.FWVGA,
-	"QHD":   data.QHD,
-	"WSVGA": data.WSVGA,
-	"XGA":   data.XGA,
-	"WXVGA": data.WXVGA,
-	"HD":    data.HD,
-	"WXGA":  data.WXGA,
-	"SXGA":  data.SXGA,
-	"XJXGA": data.XJXGA,
-	"WSXGA": data.WSXGA,
-	"UXGA":  data.UXGA,
-	"FHD":   data.FHD,
-	"WUXGA": data.WUXGA,
+	"qvga":  data.QVGA,
+	"sif":   data.SIF,
+	"cif":   data.CIF,
+	"wqvga": data.WQVGA,
+	"hvga":  data.HVGA,
+	"nhd":   data.NHD,
+	"vga":   data.VGA,
+	"wvga":  data.WVGA,
+	"svga":  data.SVGA,
+	"fwvga": data.FWVGA,
+	"qhd":   data.QHD,
+	"wsvga": data.WSVGA,
+	"xga":   data.XGA,
+	"wxvga": data.WXVGA,
+	"hd":    data.HD,
+	"wxga":  data.WXGA,
+	"sxga":  data.SXGA,
+	"xjxga": data.XJXGA,
+	"wsxga": data.WSXGA,
+	"uxga":  data.UXGA,
+	"fhd":   data.FHD,
+	"wuxga": data.WUXGA,
 }
 
 func ParseSize(s string) (size data.ImageResolution) {
+	s = strings.ToLower(s)
+
 	if ok, _ := regexp.MatchString(oneNumberSizeRegexpPattern, s); ok {
 		number, _ := strconv.ParseInt(s, 10, 64)
 
