@@ -13,7 +13,7 @@ Dummy Image allows you to dynamically create and return images of various sizes,
 ### Formats
 
 - Size: `100x100` `100` `HD` [and other...](RESOLUTIONS.md)
-- Color: `FFF` `FFFFFF` `255,255,255`
+- Color: `FFF` `FFFFFF` `255,255,255` `Red` [and other...](COLORS.md)
 - Image: `PNG` `JPEG` `SVG`
 
 > Default PNG
