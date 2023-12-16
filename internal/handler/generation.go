@@ -1,14 +1,13 @@
 package handler
 
 import (
-	"image"
-	"image/png"
-	"io"
+	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
 	"github.com/hixraid/dummy-image/internal/middleware"
 	"github.com/hixraid/dummy-image/internal/response"
+	"github.com/hixraid/dummy-image/pkg/service"
 )
 
 func generateImage(ctx *gin.Context) {
@@ -18,17 +17,18 @@ func generateImage(ctx *gin.Context) {
 		return
 	}
 
-	img := image.NewRGBA(image.Rect(0, 0, imageInfo.Size[0], imageInfo.Size[1]))
-
-	for x := 0; x < imageInfo.Size[0]; x++ {
-		for y := 0; y < imageInfo.Size[1]; y++ {
-			img.Set(x, y, imageInfo.BackgroundColor)
-		}
+	imageFormat, err := middleware.GetImageFormat(ctx)
+	if err != nil {
+		response.NewErrorResponse(ctx, http.StatusInternalServerError, err.Error())
+		return
 	}
 
-	ctx.Stream(func(w io.Writer) bool {
-		png.Encode(w, img)
+	ctx.Status(http.StatusOK)
+	ctx.Header("Content-type", fmt.Sprintf("image/%s", imageFormat))
 
-		return false
-	})
+	err = service.GenerateImage(ctx.Writer, imageFormat, imageInfo)
+	if err != nil {
+		response.NewErrorResponse(ctx, http.StatusInternalServerError, err.Error())
+		return
+	}
 }

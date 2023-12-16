@@ -2,12 +2,12 @@ package data
 
 import "image/color"
 
-type ImageFormat uint8
+type ImageFormat string
 
 const (
-	PNG  ImageFormat = 1
-	JPEG ImageFormat = 2
-	SVG  ImageFormat = 3
+	PNG  ImageFormat = "png"
+	JPEG ImageFormat = "jpeg"
+	SVG  ImageFormat = "svg"
 )
 
 type ImageResolution [2]int

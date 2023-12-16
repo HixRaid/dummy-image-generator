@@ -50,3 +50,4 @@ http://127.0.0.1:8080/400
 | gin    | [github.com/gin-gonic/gin](https://github.com/gin-gonic/gin)     | `1.9.1`  |
 | viper  | [github.com/spf13/viper](https://github.com/spf13/viper)         | `1.17.0` |
 | logrus | [github.com/sirupsen/logrus](https://github.com/sirupsen/logrus) | `1.9.3`  |
+| gg     | [github.com/fogleman/gg](https://github.com/fogleman/gg)         | `1.3.0`  |

@@ -1,24 +1,22 @@
 package utils
 
 import (
-	"errors"
-	"strings"
+	"slices"
 
 	"github.com/hixraid/dummy-image/pkg/data"
 )
 
-var formats = map[string]data.ImageFormat{
-	"png":  data.PNG,
-	"jpeg": data.JPEG,
-	"svg":  data.SVG,
+var formats = []data.ImageFormat{
+	data.PNG,
+	data.JPEG,
+	data.SVG,
 }
 
-func ParseFormat(s string) (data.ImageFormat, error) {
-	s = strings.ToLower(s)
-
-	if format, ok := formats[s]; ok {
-		return format, nil
+func ParseFormat(s string) (data.ImageFormat, bool) {
+	format := data.ImageFormat(s)
+	if ok := slices.Contains(formats, format); ok {
+		return format, true
 	}
 
-	return 0, errors.New("invalid image format")
+	return "", false
 }
