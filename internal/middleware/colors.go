@@ -3,12 +3,13 @@ package middleware
 import (
 	"image/color"
 
+	"github.com/hixraid/dummy-image/pkg/data"
 	"github.com/hixraid/dummy-image/pkg/utils"
 )
 
 var (
-	defaultBackgroundColor = color.Black
-	defaultTextColor       = color.White
+	defaultBackgroundColor = data.Black
+	defaultTextColor       = data.White
 )
 
 func parseImageColors(path []string) (backgroundColor, textColor color.Color) {
