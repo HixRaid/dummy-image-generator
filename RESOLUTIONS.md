@@ -3,7 +3,7 @@
 Example
 
 ```
-http://127.0.0.1:8080/SVGA/4F5A3E/PNG&text="All good"
+http://127.0.0.1:8080/SVGA/4F5A3E/PNG?text=All%20good
 ```
 
 > More may be added in the future

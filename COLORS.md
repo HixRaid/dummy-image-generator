@@ -1,7 +1,7 @@
 # 🖼️ Dummy Image colors
 
 ```
-http://127.0.0.1:8080/SVGA/IndianRed/LightYellow/PNG&text="All good"
+http://127.0.0.1:8080/SVGA/IndianRed/LightYellow/PNG?text=All%20good
 ```
 
 > More may be added in the future
