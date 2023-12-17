@@ -7,6 +7,7 @@ import (
 	"image/png"
 	"io"
 
+	svg "github.com/ajstarks/svgo"
 	"github.com/hixraid/dummy-image/pkg/data"
 	"github.com/hixraid/dummy-image/pkg/generator"
 )
@@ -19,8 +20,10 @@ func GenerateImage(w io.Writer, format data.ImageFormat, info data.ImageInfo) er
 			return err
 		}
 		return writeRasterImage(w, format, img)
+	case data.SVG:
+		canvas := svg.New(w)
+		return generator.GenerateVectorImage(canvas, info)
 	}
-
 	return errors.New("can't found image format")
 }
 
