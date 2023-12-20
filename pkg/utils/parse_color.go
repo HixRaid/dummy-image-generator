@@ -165,6 +165,8 @@ var colors = map[string]color.Color{
 	"black":                data.Black,
 }
 
+var ErrInvalidColor = errors.New("invalid color")
+
 func ParseColor(s string) (color.Color, error) {
 	s = strings.ToLower(s)
 	if ok, _ := regexp.MatchString(hexColorRegexpPattern, s); ok {
@@ -179,7 +181,7 @@ func ParseColor(s string) (color.Color, error) {
 		return color, nil
 	}
 
-	return nil, errors.New("invalid color")
+	return nil, ErrInvalidColor
 }
 
 func parseHEX(s string) color.Color {
