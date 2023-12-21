@@ -1,5 +1,11 @@
 # 🖼️ Dummy Image
 
+<p align="center">
+  <img src="logo.svg" width=300>
+</p>
+
+## What is this
+
 Dummy Image allows you to dynamically create and return images of various sizes, colors and styles, providing flexible customization of image generation through a simple and user-friendly URL interface.
 
 > Still in development
