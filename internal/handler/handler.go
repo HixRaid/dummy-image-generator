@@ -10,6 +10,7 @@ import (
 func InitHandler() http.Handler {
 	router := gin.New()
 
+	router.StaticFile("favicon.ico", "./resources/favicon.ico")
 	router.NoRoute(middleware.ParseURL, generateImage)
 
 	return router
