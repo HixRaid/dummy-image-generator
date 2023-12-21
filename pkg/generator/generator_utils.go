@@ -10,7 +10,7 @@ func textSize(x, y, len float64) float64 {
 	return max(min(x/len*1.15, y*0.5), 5.0)
 }
 
-func text(info data.ImageInfo) string {
+func text(info *data.ImageInfo) string {
 	if info.Text != "" {
 		return info.Text
 	}

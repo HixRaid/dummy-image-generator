@@ -12,7 +12,7 @@ import (
 	"github.com/hixraid/dummy-image/pkg/generator"
 )
 
-func GenerateImage(w io.Writer, format data.ImageFormat, info data.ImageInfo) error {
+func GenerateImage(w io.Writer, format data.ImageFormat, info *data.ImageInfo) error {
 	switch format {
 	case data.PNG, data.JPEG:
 		img, err := generator.GenerateRasterImage(info)

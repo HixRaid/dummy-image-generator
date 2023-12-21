@@ -8,7 +8,7 @@ import (
 	"github.com/hixraid/dummy-image/pkg/data"
 )
 
-func GenerateRasterImage(info data.ImageInfo) (image.Image, error) {
+func GenerateRasterImage(info *data.ImageInfo) (image.Image, error) {
 	dc := gg.NewContext(info.Size[0], info.Size[1])
 
 	r, g, b, a := info.BackgroundColor.RGBA()

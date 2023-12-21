@@ -8,6 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/hixraid/dummy-image/internal/response"
 	"github.com/hixraid/dummy-image/pkg/data"
+	"github.com/hixraid/dummy-image/pkg/utils"
 )
 
 const (
@@ -16,16 +17,17 @@ const (
 )
 
 func ParseURL(ctx *gin.Context) {
-	var imageInfo = data.ImageInfo{}
+	var imageInfo = &data.ImageInfo{}
 
-	path := strings.Split(strings.Trim(ctx.Request.URL.Path, "/"), "/")
-
-	if len(path) > 4 {
-		response.NewErrorResponse(ctx, http.StatusBadRequest, "too many params")
+	pathStr := strings.Trim(ctx.Request.URL.Path, "/")
+	if len(pathStr) == 0 {
+		response.NewErrorResponse(ctx, http.StatusBadRequest, "missing path")
 		return
 	}
 
-	imageInfo.Text = ctx.Query("text")
+	path := strings.Split(pathStr, "/")
+	pathLen := len(path)
+
 	size, err := parseSize(path[0])
 	if err != nil {
 		response.NewErrorResponse(ctx, http.StatusBadRequest, err.Error())
@@ -33,17 +35,54 @@ func ParseURL(ctx *gin.Context) {
 	}
 	imageInfo.Size = size
 
-	backgroundColor, textColor := parseImageColors(path)
-	imageInfo.BackgroundColor = backgroundColor
-	imageInfo.TextColor = textColor
+	pathIndex := 1
 
-	format, ok := parseFormat(path)
-	if len(path) == 4 && !ok {
-		response.NewErrorResponse(ctx, http.StatusBadRequest, "invalid image_format")
+	imageInfo.BackgroundColor = data.Black
+	imageInfo.TextColor = data.White
+
+	if pathLen > pathIndex {
+		clr, err := utils.ParseColor(path[pathIndex])
+		if err == nil {
+			imageInfo.BackgroundColor = clr
+			pathIndex++
+
+			if pathLen > pathIndex {
+				clr, err := utils.ParseColor(path[pathIndex])
+				if err == nil {
+					imageInfo.TextColor = clr
+					pathIndex++
+				}
+			}
+		}
+	}
+
+	imageFormat := data.PNG
+
+	if pathLen > pathIndex {
+		format, ok := utils.ParseFormat(path[pathIndex])
+		if pathLen == 4 && !ok {
+			response.NewErrorResponse(ctx, http.StatusBadRequest, "invalid image_format")
+			return
+		}
+
+		if ok {
+			pathIndex++
+			imageFormat = format
+		}
+	}
+
+	if pathLen > pathIndex {
+		response.NewErrorResponse(ctx, http.StatusBadRequest, "invalid path")
 		return
 	}
 
-	ctx.Set(imageFormatCtx, format)
+	if pathLen > 4 {
+		response.NewErrorResponse(ctx, http.StatusBadRequest, "too many params")
+		return
+	}
+
+	imageInfo.Text = ctx.Query("text")
+	ctx.Set(imageFormatCtx, imageFormat)
 	ctx.Set(imageInfoCtx, imageInfo)
 }
 
@@ -61,15 +100,15 @@ func GetImageFormat(ctx *gin.Context) (data.ImageFormat, error) {
 	return imageFormat, nil
 }
 
-func GetImageInfo(ctx *gin.Context) (data.ImageInfo, error) {
+func GetImageInfo(ctx *gin.Context) (*data.ImageInfo, error) {
 	v, ok := ctx.Get(imageInfoCtx)
 	if !ok {
-		return data.ImageInfo{}, errors.New("not found image_info")
+		return nil, errors.New("not found image_info")
 	}
 
-	imageInfo, ok := v.(data.ImageInfo)
+	imageInfo, ok := v.(*data.ImageInfo)
 	if !ok {
-		return data.ImageInfo{}, errors.New("invalid type image_info")
+		return nil, errors.New("invalid type image_info")
 	}
 
 	return imageInfo, nil

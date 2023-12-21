@@ -26,7 +26,7 @@ text {
 }
 `
 
-func GenerateVectorImage(canvas *svg.SVG, info data.ImageInfo) error {
+func GenerateVectorImage(canvas *svg.SVG, info *data.ImageInfo) error {
 	canvas.Start(info.Size[0], info.Size[1])
 	canvas.Style("text/css", svgStyles)
 
