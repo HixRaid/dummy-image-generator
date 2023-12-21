@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"errors"
 	"regexp"
 	"strconv"
 	"strings"
@@ -39,7 +40,10 @@ var resolutions = map[string]data.ImageResolution{
 	"wuxga": data.WUXGA,
 }
 
-func ParseSize(s string) (size data.ImageResolution) {
+var ErrInvalidSize = errors.New("invalid size")
+var defaultSize = [2]int{0, 0}
+
+func ParseSize(s string) (data.ImageResolution, error) {
 	s = strings.ToLower(s)
 
 	if ok, _ := regexp.MatchString(oneNumberSizeRegexpPattern, s); ok {
@@ -47,7 +51,7 @@ func ParseSize(s string) (size data.ImageResolution) {
 
 		var intNumber = int(number)
 
-		size = [2]int{intNumber, intNumber}
+		return [2]int{intNumber, intNumber}, nil
 
 	} else if ok, _ := regexp.MatchString(twoNumberSizeRegexpPattern, s); ok {
 		s := strings.Split(s, sepTwoNumberSize)
@@ -55,10 +59,11 @@ func ParseSize(s string) (size data.ImageResolution) {
 		x, _ := strconv.ParseInt(s[0], 10, 64)
 		y, _ := strconv.ParseInt(s[1], 10, 64)
 
-		size = [2]int{int(x), int(y)}
+		return [2]int{int(x), int(y)}, nil
+
 	} else if resolution, ok := resolutions[s]; ok {
-		size = resolution
+		return resolution, nil
 	}
 
-	return
+	return defaultSize, ErrInvalidSize
 }

@@ -26,7 +26,12 @@ func ParseURL(ctx *gin.Context) {
 	}
 
 	imageInfo.Text = ctx.Query("text")
-	imageInfo.Size = parseSize(path)
+	size, err := parseSize(path[0])
+	if err != nil {
+		response.NewErrorResponse(ctx, http.StatusBadRequest, err.Error())
+		return
+	}
+	imageInfo.Size = size
 
 	backgroundColor, textColor := parseImageColors(path)
 	imageInfo.BackgroundColor = backgroundColor

@@ -1,6 +1,9 @@
 package middleware
 
-import "github.com/hixraid/dummy-image/pkg/utils"
+import (
+	"github.com/hixraid/dummy-image/pkg/data"
+	"github.com/hixraid/dummy-image/pkg/utils"
+)
 
 const (
 	minSizeWidth  = 10
@@ -10,14 +13,12 @@ const (
 	maxSizeHeight = 2000
 )
 
-var defaultSize = [2]int{100, 100}
-
-func parseSize(path []string) (size [2]int) {
-	if len(path) < 1 {
-		return defaultSize
+func parseSize(s string) (data.ImageResolution, error) {
+	size, err := utils.ParseSize(s)
+	if err != nil {
+		return [2]int{0, 0}, err
 	}
 
-	size = utils.ParseSize(path[0])
 	if size[0] < minSizeWidth {
 		size[0] = minSizeWidth
 	}
@@ -32,5 +33,5 @@ func parseSize(path []string) (size [2]int) {
 		size[1] = maxSizeHeight
 	}
 
-	return
+	return size, nil
 }
