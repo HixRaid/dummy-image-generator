@@ -11,14 +11,16 @@ import (
 )
 
 const (
-	hexColorRegexpPattern = "^(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{6})$"
+	hexColorRegexpPattern = "^(?:[0-9a-fA-F]{1,3}|[0-9a-fA-F]{6})$"
 	rgbColorRegexpPattern = "^(0|[1-9]\\d?|1\\d\\d?|2[0-4]\\d|25[0-5]),(0|[1-9]\\d?|1\\d\\d?|2[0-4]\\d|25[0-5]),(0|[1-9]\\d?|1\\d\\d?|2[0-4]\\d|25[0-5])$"
 
 	hexFactor = 17
 
-	hexFormat      = "%02x%02x%02x"
-	hexShortFormat = "%1x%1x%1x"
-	rgbFormat      = "%d,%d,%d"
+	hexFormat         = "%02x%02x%02x"
+	hexShortFormat    = "%1x%1x%1x"
+	hexShortTwoFormat = "%02x"
+	hexShortOneFormat = "%1x"
+	rgbFormat         = "%d,%d,%d"
 )
 
 var colors = map[string]color.Color{
@@ -189,12 +191,22 @@ func parseHEX(s string) color.Color {
 
 	var r, g, b uint8
 
-	if len(s) == 3 {
+	switch len(s) {
+	case 1:
+		fmt.Sscanf(s, hexShortOneFormat, &r)
+		r *= hexFactor
+		g = r
+		b = r
+	case 2:
+		fmt.Sscanf(s, hexShortTwoFormat, &r)
+		g = r
+		b = r
+	case 3:
 		fmt.Sscanf(s, hexShortFormat, &r, &g, &b)
 		r *= hexFactor
 		g *= hexFactor
 		b *= hexFactor
-	} else {
+	case 6:
 		fmt.Sscanf(s, hexFormat, &r, &g, &b)
 	}
 
