@@ -21,7 +21,7 @@ func ParseURL(ctx *gin.Context) {
 
 	pathStr := strings.Trim(ctx.Request.URL.Path, "/")
 	if len(pathStr) == 0 {
-		response.NewErrorResponse(ctx, http.StatusBadRequest, "missing path")
+		response.NewErrorResponse(ctx, http.StatusInternalServerError, "missing path")
 		return
 	}
 
@@ -30,7 +30,7 @@ func ParseURL(ctx *gin.Context) {
 
 	size, err := parseSize(path[0])
 	if err != nil {
-		response.NewErrorResponse(ctx, http.StatusBadRequest, err.Error())
+		newInvalidPathResponse(ctx)
 		return
 	}
 	imageInfo.Size = size
@@ -61,7 +61,7 @@ func ParseURL(ctx *gin.Context) {
 	if pathLen > pathIndex {
 		format, ok := utils.ParseFormat(path[pathIndex])
 		if pathLen == 4 && !ok {
-			response.NewErrorResponse(ctx, http.StatusBadRequest, "invalid image_format")
+			newInvalidPathResponse(ctx)
 			return
 		}
 
@@ -72,12 +72,12 @@ func ParseURL(ctx *gin.Context) {
 	}
 
 	if pathLen > pathIndex {
-		response.NewErrorResponse(ctx, http.StatusBadRequest, "invalid path")
+		newInvalidPathResponse(ctx)
 		return
 	}
 
 	if pathLen > 4 {
-		response.NewErrorResponse(ctx, http.StatusBadRequest, "too many params")
+		newInvalidPathResponse(ctx)
 		return
 	}
 
@@ -112,4 +112,8 @@ func GetImageInfo(ctx *gin.Context) (*data.ImageInfo, error) {
 	}
 
 	return imageInfo, nil
+}
+
+func newInvalidPathResponse(ctx *gin.Context) {
+	response.NewErrorResponse(ctx, http.StatusBadRequest, "invalid path")
 }
