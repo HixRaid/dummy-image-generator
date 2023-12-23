@@ -22,7 +22,12 @@
           <div class="logo_wrapper">
             <img class="header__logo_img" src="static/img/logo.svg" />
           </div>
-          <p class="header__left_panel__title">Dummy Image</p>
+          <p class="header__left_panel__title">
+            Dummy Image
+            <span class="header__left_panel__title__span">
+              | image generator
+            </span>
+          </p>
         </div>
         <ul class="header__ul">
           <li class="header__li">
@@ -44,14 +49,44 @@
             <a class="header__link" href="#">Contact</a>
           </li>
         </ul>
+        <div
+          class="burger_button"
+          onclick="setActiveBurgerMenu(!activeBurgerMenu)"
+        >
+          <div class="burger_button__container">
+            <span class="burger_button__line burger_button__line_top"></span>
+            <span class="burger_button__line burger_button__line_center"></span>
+            <span class="burger_button__line burger_button__line_bottom"></span>
+          </div>
+        </div>
       </div>
     </header>
-    <main>
-      <div class="main__container center_panel">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci omnis
-        placeat rem officia impedit, corporis illum animi deleniti eveniet
-        soluta, a hic! Voluptatibus ad, ut maxime incidunt quos quam modi!
+    <div class="burger_menu" onclick="setActiveBurgerMenu(false)">
+      <div class="burger_menu__container">
+        <ul class="burger_menu__ul">
+          <li class="burger_menu__li">
+            <a class="burger_menu__link" href="#">About</a>
+          </li>
+          <li class="burger_menu__li">
+            <a class="burger_menu__link" href="#">Size</a>
+          </li>
+          <li class="burger_menu__li">
+            <a class="burger_menu__link" href="#">Formats</a>
+          </li>
+          <li class="burger_menu__li">
+            <a class="burger_menu__link" href="#">Text</a>
+          </li>
+          <li class="burger_menu__li">
+            <a class="burger_menu__link" href="#">Colors</a>
+          </li>
+          <li class="burger_menu__li">
+            <a class="burger_menu__link" href="#">Contact</a>
+          </li>
+        </ul>
       </div>
+    </div>
+    <main>
+      <div class="main__container center_panel"></div>
     </main>
     <footer>
       <div class="footer__container">
@@ -61,5 +96,6 @@
         accusantium officiis.
       </div>
     </footer>
+    <script src="static/js/script.js"></script>
   </body>
 </html>
