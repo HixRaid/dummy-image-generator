@@ -302,7 +302,6 @@ main {
 .sizes_section__ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(100px);
 }
 
 .sizes_section__li {
@@ -364,10 +363,81 @@ main {
   background-color: #00b6aa;
 }
 
+.colors_section__ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.colors_section__li {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  scale: 0.95;
+  transition: 0.25s;
+
+  position: relative;
+}
+
+.colors_section__li:before {
+  content: '';
+  display: block;
+  border: 1px solid transparent;
+  position: absolute;
+  border-radius: 6px;
+  z-index: -1;
+
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  transition: 0.25s;
+}
+
+.colors_section__li:hover:before {
+  border: 1px solid #b7dad8;
+  background-color: #e1eeed;
+}
+
+.colors_section__li:hover {
+  scale: 1;
+}
+
+.color_name {
+  color: #383838;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.colors_section__li:hover .color_name {
+  color: #00b6aa;
+}
+
+.color_img_wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 15px;
+  width: 15px;
+  box-shadow: 0 0 5px #adadad;
+}
+
+.color_img {
+  height: 100%;
+  width: 100%;
+}
+
 footer {
 }
 
 .footer__container {
+}
+
+@media screen and (max-width: 950px) {
+  .colors_section__ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -376,6 +446,10 @@ footer {
   }
 
   .sizes_section__ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .colors_section__ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -400,6 +474,10 @@ footer {
   .sizes_section__ul {
     grid-template-columns: 1fr 1fr;
   }
+
+  .colors_section__ul {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -416,11 +494,21 @@ footer {
     padding: 5px;
     border-radius: 8px;
   }
+
+  .colors_section__ul {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .sizes_section__ul {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .formats_list__other {
+    display: none;
   }
 }
 
