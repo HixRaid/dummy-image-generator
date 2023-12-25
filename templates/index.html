@@ -31,22 +31,38 @@
         </div>
         <ul class="header__ul">
           <li class="header__li">
-            <a class="header__link" href="#">About</a>
+            <label class="header__link" onclick="scrollToElement('about', -75)">
+              About
+            </label>
           </li>
           <li class="header__li">
-            <a class="header__link" href="#">Sizes</a>
+            <label class="header__link" onclick="scrollToElement('sizes', -75)">
+              Sizes
+            </label>
           </li>
           <li class="header__li">
-            <a class="header__link" href="#">Formats</a>
+            <label
+              class="header__link"
+              onclick="scrollToElement('formats', -75)"
+            >
+              Formats
+            </label>
           </li>
           <li class="header__li">
-            <a class="header__link" href="#">Text</a>
+            <label
+              class="header__link"
+              onclick="scrollToElement('colors', -75)"
+            >
+              Colors
+            </label>
           </li>
           <li class="header__li">
-            <a class="header__link" href="#">Colors</a>
-          </li>
-          <li class="header__li">
-            <a class="header__link" href="#">Contact</a>
+            <label
+              class="header__link"
+              onclick="scrollToElement('source', -75)"
+            >
+              Source
+            </label>
           </li>
         </ul>
         <div
@@ -61,26 +77,48 @@
         </div>
       </div>
     </header>
-    <div class="burger_menu" onclick="setActiveBurgerMenu(false)">
+    <div class="burger_menu">
       <div class="burger_menu__container">
         <ul class="burger_menu__ul">
           <li class="burger_menu__li">
-            <a class="burger_menu__link" href="#">About</a>
+            <label
+              class="burger_menu__link"
+              onclick="scrollToElement('about', -75)"
+            >
+              About
+            </label>
           </li>
           <li class="burger_menu__li">
-            <a class="burger_menu__link" href="#">Sizes</a>
+            <label
+              class="burger_menu__link"
+              onclick="scrollToElement('sizes', -75)"
+            >
+              Sizes
+            </label>
           </li>
           <li class="burger_menu__li">
-            <a class="burger_menu__link" href="#">Formats</a>
+            <label
+              class="burger_menu__link"
+              onclick="scrollToElement('formats', -75)"
+            >
+              Formats
+            </label>
           </li>
           <li class="burger_menu__li">
-            <a class="burger_menu__link" href="#">Text</a>
+            <label
+              class="burger_menu__link"
+              onclick="scrollToElement('colors', -75)"
+            >
+              Colors
+            </label>
           </li>
           <li class="burger_menu__li">
-            <a class="burger_menu__link" href="#">Colors</a>
-          </li>
-          <li class="burger_menu__li">
-            <a class="burger_menu__link" href="#">Contact</a>
+            <label
+              class="burger_menu__link"
+              onclick="scrollToElement('source', -75)"
+            >
+              Source
+            </label>
           </li>
         </ul>
       </div>
@@ -88,7 +126,7 @@
     <main>
       <div class="main__container center_panel">
         <section>
-          <h3 class="section__title">About</h3>
+          <h3 class="section__title" id="about">About</h3>
           <p class="section__p">
             Dummy Image allows you to dynamically create and return images of
             various sizes, colors and styles, providing flexible customization
@@ -109,7 +147,7 @@
           </div>
         </section>
         <section class="sizes_section">
-          <h3 class="section__title">Sizes</h3>
+          <h3 class="section__title" id="sizes">Sizes</h3>
           <p class="section__p">
             Image size is one of the key characteristics of a graphics file. It
             is defined in pixels and indicates the number of points that make up
@@ -263,7 +301,7 @@
           </ul>
         </section>
         <section class="formats_section">
-          <h3 class="section__title">Formats</h3>
+          <h3 class="section__title" id="formats">Formats</h3>
           <div class="formats_section__container">
             <span class="format">PNG</span>
             <span class="format">JPEG</span>
@@ -271,7 +309,7 @@
           </div>
         </section>
         <section class="colors_section">
-          <h3 class="section__title">Colors</h3>
+          <h3 class="section__title" id="colors">Colors</h3>
           <p class="section__p">
             Color in an image is one of the important aspects that determine its
             visual perception. Color can create a mood, highlight objects,
@@ -1577,6 +1615,9 @@
               </div>
             </li>
           </ul>
+        </section>
+        <section>
+          <h3 class="section__title" id="source">Source</h3>
         </section>
       </div>
     </main>

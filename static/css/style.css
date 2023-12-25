@@ -109,6 +109,8 @@ header {
   color: #383838;
   align-items: center;
   transition: 0.25s;
+  cursor: pointer;
+  user-select: none;
 }
 
 .header__link:hover {
@@ -236,6 +238,7 @@ header {
   text-align: center;
   width: 100%;
   transition: 0.25s;
+  cursor: pointer;
 }
 
 .burger_menu__link:active {
@@ -478,6 +481,10 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  body.noscroll {
+    overflow: hidden;
+  }
+
   .header__left_panel__title__span {
     display: inline;
   }
