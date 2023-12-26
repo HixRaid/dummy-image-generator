@@ -36,9 +36,6 @@ img {
 
 body {
   font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 .center_panel {
@@ -245,11 +242,6 @@ header {
   color: #00b6aa;
 }
 
-main {
-  margin-top: 65px;
-  flex-grow: 1;
-}
-
 .main__container {
   padding: 10px;
 }
@@ -452,12 +444,6 @@ main {
 .color_img {
   height: 100%;
   width: 100%;
-}
-
-footer {
-}
-
-.footer__container {
 }
 
 @media screen and (max-width: 950px) {
