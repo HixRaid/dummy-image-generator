@@ -4,6 +4,7 @@ let body = document.querySelector('body');
 
 let activeBurgerMenu = false;
 
+// Smooth scroll to element by id
 function scrollToElement(elementId, offset) {
   setActiveBurgerMenu(false);
 
@@ -14,10 +15,12 @@ function scrollToElement(elementId, offset) {
   });
 }
 
+// Switch burger menu
 function setActiveBurgerMenu(active) {
   if (activeBurgerMenu == active) {
     return;
   }
+
   activeBurgerMenu = active;
   if (activeBurgerMenu) {
     burgerButton.classList.add('active');
