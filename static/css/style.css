@@ -455,6 +455,21 @@ header {
   width: 100%;
 }
 
+/* Source */
+.source_link_wrapper {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.source_link {
+  text-decoration: none;
+  border: 1px solid #383838;
+  padding: 4px;
+  border-radius: 6px;
+  color: #383838;
+}
+
 /* Adaptive */
 @media screen and (max-width: 950px) {
   .colors_section__ul {
@@ -555,6 +570,12 @@ header {
 
   .path_structure__sep {
     display: none;
+  }
+
+  .source_link {
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 4.5px;
   }
 }
 
