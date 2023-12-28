@@ -247,6 +247,10 @@ header {
 }
 
 /* Main */
+main {
+  padding-top: 65px;
+}
+
 .main__container {
   padding: 10px;
 }
