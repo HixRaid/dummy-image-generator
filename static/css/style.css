@@ -472,6 +472,14 @@ main {
   padding: 4px;
   border-radius: 6px;
   color: #383838;
+  opacity: 0.9;
+  scale: 0.95;
+  transition: 0.25s;
+}
+
+.source_link:hover {
+  opacity: 1;
+  scale: 1;
 }
 
 /* Adaptive */
