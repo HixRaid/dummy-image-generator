@@ -4,13 +4,13 @@ let body = document.querySelector('body');
 
 let activeBurgerMenu = false;
 
-// Smooth scroll to element by id
-function scrollToElement(elementId, offset) {
+// Smooth scroll to title by id
+function scrollToTitle(titleId) {
   setActiveBurgerMenu(false);
 
-  var element = document.getElementById(elementId);
+  var element = document.getElementById(titleId);
   window.scrollTo({
-    top: element.offsetTop + offset,
+    top: element.offsetTop - 75,
     behavior: 'smooth',
   });
 }
