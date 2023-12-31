@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	oneNumberSizeRegexpPattern = "^\\d{1,4}$"
+	oneNumberSizeRegexpPattern = "^\\d*$"
 	twoNumberSizeRegexpPattern = "^\\d*x\\d*$"
 	sepTwoNumberSize           = "x"
 )
