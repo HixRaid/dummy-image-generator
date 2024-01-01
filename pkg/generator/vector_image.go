@@ -35,16 +35,19 @@ func GenerateVectorImage(canvas *svg.SVG, info *data.ImageInfo) error {
 
 	var imageText = text(info)
 
-	fontSize := textSize(float64(info.Size[0]), float64(info.Size[1]), float64(len(imageText)))
+	if imageText != "" {
+		fontSize := textSize(float64(info.Size[0]), float64(info.Size[1]), float64(len(imageText)))
 
-	r, g, b = rgbFromColor(info.TextColor)
-	textStyles := fmt.Sprintf(
-		"font-size: %dpx; fill: rgb(%d, %d, %d);",
-		int(fontSize),
-		r, g, b,
-	)
-	canvas.Text(info.Size[0]/2, info.Size[1]/2, imageText, textStyles)
-	canvas.End()
+		r, g, b = rgbFromColor(info.TextColor)
+		textStyles := fmt.Sprintf(
+			"font-size: %dpx; fill: rgb(%d, %d, %d);",
+			int(fontSize),
+			r, g, b,
+		)
+		canvas.Text(info.Size[0]/2, info.Size[1]/2, imageText, textStyles)
+		canvas.End()
+	}
+
 	return nil
 }
 

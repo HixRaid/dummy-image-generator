@@ -21,12 +21,14 @@ func GenerateRasterImage(info *data.ImageInfo) (image.Image, error) {
 
 	var imageText = text(info)
 
-	fontSize := textSize(float64(info.Size[0]), float64(info.Size[1]), float64(len(imageText)))
-	if err := dc.LoadFontFace("fonts/arial.ttf", fontSize); err != nil {
-		return nil, errors.New("can't load font")
-	}
+	if imageText != "" {
+		fontSize := textSize(float64(info.Size[0]), float64(info.Size[1]), float64(len(imageText)))
+		if err := dc.LoadFontFace("fonts/arial.ttf", fontSize); err != nil {
+			return nil, errors.New("can't load font")
+		}
 
-	dc.DrawStringAnchored(imageText, float64(info.Size[0])/2, float64(info.Size[1])/2, 0.5, 0.5)
+		dc.DrawStringAnchored(imageText, float64(info.Size[0])/2, float64(info.Size[1])/2, 0.5, 0.5)
+	}
 
 	return dc.Image(), nil
 }
