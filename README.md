@@ -14,20 +14,30 @@ Dummy Image allows you to dynamically create and return images of various sizes,
 
 / `size` / `background_color` / `text_color` / `format` ? `text`
 
-> Size required
-
 ### Formats
 
 - Size: `100x100` `100` `HD` [and other...](RESOLUTIONS.md)
+
+  > Required
+
 - Color: `F` `FF` `FFF` `FFFFFF` `255,255,255` `White` [and other...](COLORS.md)
+
+  > Default: background is `Black` text is `White`
+
+- Text: `Hello world` `no_text`
+
+  > Default: `width x height`
+
 - Image: `PNG` `JPEG` `SVG`
 
-> Default PNG
+  > Default: `PNG`
 
 ### Limits
 
 - Min size: `10x10`
 - Max size: `2000x2000`
+
+> Automatic size clamp
 
 Examples
 
