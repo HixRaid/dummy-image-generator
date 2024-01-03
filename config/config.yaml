@@ -1,7 +1,7 @@
 server:
   addr: :8080
 image:
-  default_format: svg
+  default_format: png
   size:
     min_size: 10x10
     max_size: 2000x2000
