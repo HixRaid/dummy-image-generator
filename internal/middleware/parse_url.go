@@ -2,10 +2,12 @@ package middleware
 
 import (
 	"errors"
+	"image/color"
 	"net/http"
 	"strings"
 
 	"github.com/gin-gonic/gin"
+	"github.com/hixraid/dummy-image/internal/config"
 	"github.com/hixraid/dummy-image/internal/response"
 	"github.com/hixraid/dummy-image/pkg/data"
 	"github.com/hixraid/dummy-image/pkg/utils"
@@ -16,7 +18,38 @@ const (
 	imageInfoCtx   = "image_info"
 )
 
-func ParseURL(ctx *gin.Context) {
+type ImageURLParser struct {
+	defaultFormat data.ImageFormat
+	*imageSizeParser
+	defaultBackgroundColor color.Color
+	defaultTextColor       color.Color
+}
+
+func NewImageURLParser(cfg *config.ImageConfig) *ImageURLParser {
+	defaultFormat, ok := utils.ParseFormat(cfg.DefaultFormat)
+	if !ok {
+		defaultFormat = data.PNG
+	}
+
+	defaultBackgroundColor, err := utils.ParseColor(cfg.Color.DefaultBackgroundColor)
+	if err != nil {
+		defaultBackgroundColor = data.Black
+	}
+
+	defaultTextColor, err := utils.ParseColor(cfg.Color.DefaultTextColor)
+	if err != nil {
+		defaultTextColor = data.White
+	}
+
+	return &ImageURLParser{
+		defaultFormat,
+		newImageSizeParser(cfg.Size),
+		defaultBackgroundColor,
+		defaultTextColor,
+	}
+}
+
+func (p *ImageURLParser) ParseURL(ctx *gin.Context) {
 	var imageInfo = &data.ImageInfo{}
 
 	pathStr := strings.Trim(ctx.Request.URL.Path, "/")
@@ -28,7 +61,7 @@ func ParseURL(ctx *gin.Context) {
 	path := strings.Split(pathStr, "/")
 	pathLen := len(path)
 
-	size, err := parseSize(path[0])
+	size, err := p.imageSizeParser.parseSize(path[0])
 	if err != nil {
 		newInvalidPathResponse(ctx)
 		return
@@ -37,8 +70,8 @@ func ParseURL(ctx *gin.Context) {
 
 	pathIndex := 1
 
-	imageInfo.BackgroundColor = data.Black
-	imageInfo.TextColor = data.White
+	imageInfo.BackgroundColor = p.defaultBackgroundColor
+	imageInfo.TextColor = p.defaultTextColor
 
 	if pathLen > pathIndex {
 		clr, err := utils.ParseColor(path[pathIndex])
@@ -56,7 +89,7 @@ func ParseURL(ctx *gin.Context) {
 		}
 	}
 
-	imageFormat := data.PNG
+	imageFormat := p.defaultFormat
 
 	if pathLen > pathIndex {
 		format, ok := utils.ParseFormat(path[pathIndex])

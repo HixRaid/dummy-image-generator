@@ -1,1 +1,11 @@
-addr: :8080
+server:
+  addr: :8080
+image:
+  default_format: svg
+  size:
+    min_size: 10x10
+    max_size: 2000x2000
+    size_clamp: true
+  color:
+    default_background_color: Black
+    default_text_color: White

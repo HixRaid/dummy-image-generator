@@ -4,10 +4,11 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/hixraid/dummy-image/internal/config"
 	"github.com/hixraid/dummy-image/internal/middleware"
 )
 
-func InitHandler() http.Handler {
+func InitHandler(cfg *config.ImageConfig) http.Handler {
 	router := gin.New()
 
 	router.LoadHTMLGlob("templates/*")
@@ -17,7 +18,8 @@ func InitHandler() http.Handler {
 
 	router.GET("/", index)
 
-	router.NoRoute(middleware.ParseURL, generateImage)
+	parserMiddleware := middleware.NewImageURLParser(cfg)
+	router.NoRoute(parserMiddleware.ParseURL, generateImage)
 
 	return router
 }

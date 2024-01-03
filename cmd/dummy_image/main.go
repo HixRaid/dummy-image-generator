@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"os/signal"
 	"syscall"
@@ -25,9 +26,15 @@ func main() {
 		logrus.Fatalf("can't parse config file: %v", err)
 	}
 
-	handler := handler.InitHandler()
+	fmt.Println(cfg)
+	fmt.Println(cfg.Server)
+	fmt.Println(cfg.Image)
+	fmt.Println(cfg.Image.Size)
+	fmt.Println(cfg.Image.Color)
 
-	srv := server.New(cfg.Addr, handler)
+	handler := handler.InitHandler(cfg.Image)
+
+	srv := server.New(cfg.Server.Addr, handler)
 	go func() {
 		if err := srv.Run(); err != nil {
 			logrus.Fatalf("error: '%v' while running http server", err)
