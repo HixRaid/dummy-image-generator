@@ -10,6 +10,27 @@ Dummy Image allows you to dynamically create and return images of various sizes,
 
 > Still in development
 
+## 🗂️ Project
+
+### Structure
+
+- Executable file
+- Config `config.yaml`
+- Fonts `arial.ttf`
+- Resources `favicon.ico`
+- Static `css` `img` `js`
+- Templates `index.html`
+
+### Build and run
+
+```
+go mod download
+go build -ldflags="-s -w" -o dummy_image.exe cmd\dummy_image\main.go
+.\dummy_image.exe
+```
+
+> Example for Windows
+
 ## 📃 URL
 
 / `size` / `background_color` / `text_color` / `format` ? `text`
