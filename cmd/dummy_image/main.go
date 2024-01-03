@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 	"os/signal"
 	"syscall"
@@ -25,12 +24,6 @@ func main() {
 	if err != nil {
 		logrus.Fatalf("can't parse config file: %v", err)
 	}
-
-	fmt.Println(cfg)
-	fmt.Println(cfg.Server)
-	fmt.Println(cfg.Image)
-	fmt.Println(cfg.Image.Size)
-	fmt.Println(cfg.Image.Color)
 
 	handler := handler.InitHandler(cfg.Image)
 
