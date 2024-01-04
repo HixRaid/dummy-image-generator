@@ -21,6 +21,20 @@ Dummy Image allows you to dynamically create and return images of various sizes,
 - Static `css` `img` `js`
 - Templates `index.html`
 
+### Config
+
+- server
+  - addr `host` : `port`
+- image
+  - default_format `image format`
+  - size
+    - min_size `size format`
+    - max_size `size format`
+    - size_clamp `bool`
+  - color
+    - default_background_color `color format`
+    - default_text_color `color format`
+
 ### Build and run
 
 ```
