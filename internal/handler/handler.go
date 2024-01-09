@@ -11,12 +11,12 @@ import (
 func InitHandler(cfg *config.ImageConfig) http.Handler {
 	router := gin.New()
 
-	router.LoadHTMLGlob("templates/*")
+	router.LoadHTMLGlob("views/*")
 
 	router.Static("/static", "./static")
 	router.StaticFile("favicon.ico", "./resources/favicon.ico")
 
-	router.GET("/", index)
+	router.GET("/", indexPage)
 
 	parserMiddleware := middleware.NewImageURLParser(cfg)
 	router.NoRoute(parserMiddleware.ParseURL, generateImage)

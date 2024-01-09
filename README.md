@@ -19,7 +19,7 @@ Dummy Image allows you to dynamically create and return images of various sizes,
 - Fonts `arial.ttf`
 - Resources `favicon.ico`
 - Static `css` `img` `js`
-- Templates `index.html`
+- Views `index.html`
 
 ### Config
 
