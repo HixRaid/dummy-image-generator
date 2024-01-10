@@ -240,9 +240,10 @@ header {
   width: 100%;
   transition: 0.25s;
   cursor: pointer;
+  user-select: none;
 }
 
-.burger_menu__link:active {
+.burger_menu__link:hover {
   color: #00b6aa;
 }
 
@@ -619,5 +620,11 @@ main {
 
   .formats_list {
     gap: 5px;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  .burger_menu__link {
+    font-size: 24px;
   }
 }
