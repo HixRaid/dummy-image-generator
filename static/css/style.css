@@ -51,8 +51,8 @@ header {
   top: 0;
   height: 65px;
   background-color: white;
-  border-bottom: #eeeeee solid 2px;
-  z-index: 10;
+  box-shadow: 0 0 10px #e2e2e2;
+  z-index: 20;
 }
 
 .header__container {
@@ -204,6 +204,7 @@ header {
   transform: translate(0, 100%);
   opacity: 0;
   transition: 0.5s;
+  overflow-y: hidden;
 }
 
 .burger_menu.active {
@@ -219,7 +220,6 @@ header {
 .burger_menu__ul {
   height: 100%;
   width: 100%;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   display: flex;
@@ -277,9 +277,12 @@ main {
   display: block;
   font-size: 24px;
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 10px;
   font-weight: bold;
   color: #383838;
+  border-bottom: #eeeeee solid 2px;
+  max-width: 500px;
 }
 
 .path_structure {
@@ -416,7 +419,6 @@ main {
 .colors_section__li:before {
   content: '';
   display: block;
-  border: 1px solid transparent;
   position: absolute;
   border-radius: 6px;
   z-index: -1;
@@ -429,7 +431,6 @@ main {
 }
 
 .colors_section__li:hover:before {
-  border: 1px solid #b7dad8;
   background-color: #e1eeed;
 }
 
@@ -469,10 +470,11 @@ main {
 
 .source_link {
   text-decoration: none;
-  border: 1px solid #383838;
   padding: 4px;
   border-radius: 6px;
+  border: 1px solid #383838;
   color: #383838;
+
   opacity: 0.9;
   scale: 0.95;
   transition: 0.25s;
@@ -481,6 +483,9 @@ main {
 .source_link:hover {
   opacity: 1;
   scale: 1;
+  color: #00b6aa;
+  border: 1px solid #00b6aa;
+  background-color: #e1eeed;
 }
 
 /* Adaptive */
@@ -507,6 +512,11 @@ main {
 @media screen and (max-width: 600px) {
   body.noscroll {
     overflow: hidden;
+  }
+
+  .section__subtitle {
+    border-bottom: 0;
+    max-width: auto;
   }
 
   .header__left_panel__title__span {
