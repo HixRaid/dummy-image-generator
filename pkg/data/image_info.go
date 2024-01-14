@@ -7,6 +7,7 @@ type ImageFormat string
 const (
 	PNG  ImageFormat = "png"
 	JPEG ImageFormat = "jpeg"
+	WEBP ImageFormat = "webp"
 	SVG  ImageFormat = "svg"
 )
 

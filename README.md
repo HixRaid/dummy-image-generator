@@ -63,7 +63,7 @@ go build -ldflags="-s -w" -o dummy_image.exe cmd\dummy_image\main.go
 
   > Default: `width x height`
 
-- Image: `PNG` `JPEG` `SVG`
+- Image: `PNG` `JPEG` `WEBP` `SVG`
 
   > Default: `PNG`
 
@@ -102,4 +102,5 @@ http://127.0.0.1:8080/400
 | viper  | [github.com/spf13/viper](https://github.com/spf13/viper)         | `1.17.0` |
 | logrus | [github.com/sirupsen/logrus](https://github.com/sirupsen/logrus) | `1.9.3`  |
 | gg     | [github.com/fogleman/gg](https://github.com/fogleman/gg)         | `1.3.0`  |
+| webp   | [github.com/chai2010/webp](https://github.com/chai2010/webp)     | `1.1.1`  |
 | svgo   | [github.com/ajstarks/svgo](https://github.com/ajstarks/svgo)     | `0.0.0`  |

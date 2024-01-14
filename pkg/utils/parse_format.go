@@ -9,6 +9,7 @@ import (
 var formats = []data.ImageFormat{
 	data.PNG,
 	data.JPEG,
+	data.WEBP,
 	data.SVG,
 }
 

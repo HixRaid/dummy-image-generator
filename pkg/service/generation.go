@@ -8,13 +8,14 @@ import (
 	"io"
 
 	svg "github.com/ajstarks/svgo"
+	"github.com/chai2010/webp"
 	"github.com/hixraid/dummy-image/pkg/data"
 	"github.com/hixraid/dummy-image/pkg/generator"
 )
 
 func GenerateImage(w io.Writer, format data.ImageFormat, info *data.ImageInfo) error {
 	switch format {
-	case data.PNG, data.JPEG:
+	case data.PNG, data.JPEG, data.WEBP:
 		img, err := generator.GenerateRasterImage(info)
 		if err != nil {
 			return err
@@ -33,6 +34,8 @@ func writeRasterImage(w io.Writer, format data.ImageFormat, img image.Image) err
 		return png.Encode(w, img)
 	case data.JPEG:
 		return jpeg.Encode(w, img, nil)
+	case data.WEBP:
+		return webp.Encode(w, img, nil)
 	}
 
 	return errors.New("can't found raster image format")
