@@ -4,6 +4,7 @@ go 1.21.4
 
 require (
 	github.com/ajstarks/svgo v0.0.0-20211024235047-1546f124cd8b
+	github.com/chai2010/webp v1.1.1
 	github.com/fogleman/gg v1.3.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/sirupsen/logrus v1.9.3
@@ -12,7 +13,6 @@ require (
 
 require (
 	github.com/bytedance/sonic v1.10.2 // indirect
-	github.com/chai2010/webp v1.1.1 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20230717121745-296ad89f973d // indirect
 	github.com/chenzhuoyu/iasm v0.9.1 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
