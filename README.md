@@ -63,7 +63,7 @@ go build -ldflags="-s -w" -o dummy_image.exe cmd\dummy_image\main.go
 
   > Default: `width x height`
 
-- Image: `PNG` `JPEG` `WEBP` `gif` `SVG`
+- Image: `PNG` `JPEG` `WEBP` `GIF` `SVG`
 
   > Default: `PNG`
 
@@ -77,13 +77,13 @@ go build -ldflags="-s -w" -o dummy_image.exe cmd\dummy_image\main.go
 Examples
 
 ```
-http://127.0.0.1:8080/800x800/FFF/000/png?text=Hello%20world
+http://127.0.0.1:8080/800x800/FFF/000/gif?text=Hello%20world
 ```
 
 > size, background_color, text_color, format, text
 
 ```
-http://127.0.0.1:8080/HD/F1E2D3/png?text=Hello%20world
+http://127.0.0.1:8080/HD/F1E2D3/webp?text=Hello%20world
 ```
 
 > size, background_color, format, text
