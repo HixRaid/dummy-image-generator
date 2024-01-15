@@ -3,6 +3,7 @@ package service
 import (
 	"errors"
 	"image"
+	"image/gif"
 	"image/jpeg"
 	"image/png"
 	"io"
@@ -15,7 +16,7 @@ import (
 
 func GenerateImage(w io.Writer, format data.ImageFormat, info *data.ImageInfo) error {
 	switch format {
-	case data.PNG, data.JPEG, data.WEBP:
+	case data.PNG, data.JPEG, data.WEBP, data.GIF:
 		img, err := generator.GenerateRasterImage(info)
 		if err != nil {
 			return err
@@ -36,6 +37,8 @@ func writeRasterImage(w io.Writer, format data.ImageFormat, img image.Image) err
 		return jpeg.Encode(w, img, nil)
 	case data.WEBP:
 		return webp.Encode(w, img, nil)
+	case data.GIF:
+		return gif.Encode(w, img, nil)
 	}
 
 	return errors.New("can't found raster image format")

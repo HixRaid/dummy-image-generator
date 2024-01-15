@@ -8,6 +8,7 @@ const (
 	PNG  ImageFormat = "png"
 	JPEG ImageFormat = "jpeg"
 	WEBP ImageFormat = "webp"
+	GIF  ImageFormat = "gif"
 	SVG  ImageFormat = "svg"
 )
 

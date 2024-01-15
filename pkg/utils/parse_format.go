@@ -10,6 +10,7 @@ var formats = []data.ImageFormat{
 	data.PNG,
 	data.JPEG,
 	data.WEBP,
+	data.GIF,
 	data.SVG,
 }
 

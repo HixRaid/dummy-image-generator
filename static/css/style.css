@@ -378,6 +378,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .format {
@@ -504,6 +505,16 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .formats_section__container {
+    gap: 10px;
+  }
+
+  .format {
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 8px;
+  }
+
   .colors_section__ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -547,16 +558,6 @@ main {
 @media screen and (max-width: 500px) {
   .header__left_panel__title__span {
     display: none;
-  }
-
-  .formats_section__container {
-    gap: 10px;
-  }
-
-  .format {
-    font-size: 24px;
-    padding: 5px;
-    border-radius: 8px;
   }
 
   .colors_section__ul {

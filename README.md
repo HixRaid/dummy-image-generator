@@ -63,7 +63,7 @@ go build -ldflags="-s -w" -o dummy_image.exe cmd\dummy_image\main.go
 
   > Default: `width x height`
 
-- Image: `PNG` `JPEG` `WEBP` `SVG`
+- Image: `PNG` `JPEG` `WEBP` `gif` `SVG`
 
   > Default: `PNG`
 

@@ -14,6 +14,7 @@ func TestParseFormat(t *testing.T) {
 		"png":  {data.PNG, true},
 		"jpeg": {data.JPEG, true},
 		"webp": {data.WEBP, true},
+		"gif":  {data.GIF, true},
 		"svg":  {data.SVG, true},
 		"abc":  {"", false},
 		"def":  {"", false},
