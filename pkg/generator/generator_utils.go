@@ -3,7 +3,7 @@ package generator
 import (
 	"fmt"
 
-	"github.com/hixraid/dummy-image/pkg/data"
+	"github.com/hixraid/dummy-image-generator/pkg/data"
 )
 
 const noTextKey = "no_text"

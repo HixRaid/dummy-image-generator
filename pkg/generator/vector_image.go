@@ -5,7 +5,7 @@ import (
 	"image/color"
 
 	svg "github.com/ajstarks/svgo"
-	"github.com/hixraid/dummy-image/pkg/data"
+	"github.com/hixraid/dummy-image-generator/pkg/data"
 )
 
 const svgStyles = `

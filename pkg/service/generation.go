@@ -10,8 +10,8 @@ import (
 
 	svg "github.com/ajstarks/svgo"
 	"github.com/chai2010/webp"
-	"github.com/hixraid/dummy-image/pkg/data"
-	"github.com/hixraid/dummy-image/pkg/generator"
+	"github.com/hixraid/dummy-image-generator/pkg/data"
+	"github.com/hixraid/dummy-image-generator/pkg/generator"
 )
 
 func GenerateImage(w io.Writer, format data.ImageFormat, info *data.ImageInfo) error {

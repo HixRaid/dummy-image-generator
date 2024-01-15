@@ -3,7 +3,7 @@ package utils
 import (
 	"slices"
 
-	"github.com/hixraid/dummy-image/pkg/data"
+	"github.com/hixraid/dummy-image-generator/pkg/data"
 )
 
 var formats = []data.ImageFormat{

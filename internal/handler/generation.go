@@ -5,10 +5,10 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/hixraid/dummy-image/internal/middleware"
-	"github.com/hixraid/dummy-image/internal/response"
-	"github.com/hixraid/dummy-image/pkg/data"
-	"github.com/hixraid/dummy-image/pkg/service"
+	"github.com/hixraid/dummy-image-generator/internal/middleware"
+	"github.com/hixraid/dummy-image-generator/internal/response"
+	"github.com/hixraid/dummy-image-generator/pkg/data"
+	"github.com/hixraid/dummy-image-generator/pkg/service"
 )
 
 func generateImage(ctx *gin.Context) {

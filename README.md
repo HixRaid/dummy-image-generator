@@ -1,4 +1,4 @@
-# 🖼️ Dummy Image
+# 🖼️ Dummy Image Generator
 
 <p align="center">
   <img src="logo.svg" width=300>
@@ -6,7 +6,7 @@
 
 ## What is this
 
-Dummy Image allows you to dynamically create and return images of various sizes, colors and styles, providing flexible customization of image generation through a simple and user-friendly URL interface.
+Dummy Image Generator allows you to dynamically create and return images of various sizes, colors and styles, providing flexible customization of image generation through a simple and user-friendly URL interface.
 
 > Still in development
 
@@ -39,8 +39,8 @@ Dummy Image allows you to dynamically create and return images of various sizes,
 
 ```
 go mod download
-go build -ldflags="-s -w" -o dummy_image.exe cmd\dummy_image\main.go
-.\dummy_image.exe
+go build -ldflags="-s -w" -o http_server.exe cmd\http_server\main.go
+.\http_server.exe
 ```
 
 > Example for Windows

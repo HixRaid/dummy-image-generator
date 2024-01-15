@@ -3,7 +3,7 @@ package utils
 import (
 	"testing"
 
-	"github.com/hixraid/dummy-image/pkg/data"
+	"github.com/hixraid/dummy-image-generator/pkg/data"
 )
 
 func TestParseSize(t *testing.T) {

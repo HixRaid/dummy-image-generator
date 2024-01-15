@@ -6,9 +6,9 @@ import (
 	"syscall"
 
 	"github.com/gin-gonic/gin"
-	"github.com/hixraid/dummy-image/internal/config"
-	"github.com/hixraid/dummy-image/internal/handler"
-	"github.com/hixraid/dummy-image/internal/server"
+	"github.com/hixraid/dummy-image-generator/internal/config"
+	"github.com/hixraid/dummy-image-generator/internal/handler"
+	"github.com/hixraid/dummy-image-generator/internal/server"
 	"github.com/sirupsen/logrus"
 )
 

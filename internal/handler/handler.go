@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/hixraid/dummy-image/internal/config"
-	"github.com/hixraid/dummy-image/internal/middleware"
+	"github.com/hixraid/dummy-image-generator/internal/config"
+	"github.com/hixraid/dummy-image-generator/internal/middleware"
 )
 
 func InitHandler(cfg *config.ImageConfig) http.Handler {

@@ -1,9 +1,9 @@
 package middleware
 
 import (
-	"github.com/hixraid/dummy-image/internal/config"
-	"github.com/hixraid/dummy-image/pkg/data"
-	"github.com/hixraid/dummy-image/pkg/utils"
+	"github.com/hixraid/dummy-image-generator/internal/config"
+	"github.com/hixraid/dummy-image-generator/pkg/data"
+	"github.com/hixraid/dummy-image-generator/pkg/utils"
 )
 
 type imageSizeParser struct {

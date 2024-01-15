@@ -1,4 +1,4 @@
-# 🖼️ Dummy Image resolutions
+# 🖼️ Dummy Image Generator resolutions
 
 Example
 

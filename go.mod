@@ -1,4 +1,4 @@
-module github.com/hixraid/dummy-image
+module github.com/hixraid/dummy-image-generator
 
 go 1.21.4
 

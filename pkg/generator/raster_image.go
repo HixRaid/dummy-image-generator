@@ -5,7 +5,7 @@ import (
 	"image"
 
 	"github.com/fogleman/gg"
-	"github.com/hixraid/dummy-image/pkg/data"
+	"github.com/hixraid/dummy-image-generator/pkg/data"
 )
 
 func GenerateRasterImage(info *data.ImageInfo) (image.Image, error) {
