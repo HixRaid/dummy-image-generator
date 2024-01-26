@@ -67,6 +67,7 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  user-select: none;
 }
 
 /* Logo */
@@ -576,6 +577,10 @@ main {
 }
 
 @media screen and (max-width: 400px) {
+  .header__left_panel__title {
+    display: none;
+  }
+
   .sizes_section__ul {
     grid-template-columns: 1fr;
   }
