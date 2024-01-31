@@ -45,8 +45,8 @@ func GenerateVectorImage(canvas *svg.SVG, info *data.ImageInfo) error {
 			r, g, b,
 		)
 		canvas.Text(info.Size[0]/2, info.Size[1]/2, imageText, textStyles)
-		canvas.End()
 	}
+	canvas.End()
 
 	return nil
 }
