@@ -539,6 +539,7 @@ main {
   height: 15px;
   width: 15px;
   box-shadow: 0 0 5px #adadad;
+  align-self: center;
 }
 
 .dark .color_img_wrapper {

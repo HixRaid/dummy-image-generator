@@ -26,6 +26,7 @@ func generateImage(ctx *gin.Context) {
 
 	ctx.Status(http.StatusOK)
 	ctx.Header("Content-type", getContentType(imageFormat))
+	ctx.Header("Cache-Control", "public, max-age=31557600")
 
 	err = service.GenerateImage(ctx.Writer, imageFormat, imageInfo)
 	if err != nil {
