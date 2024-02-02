@@ -1,7 +1,7 @@
 # 🖼️ Dummy Image Generator
 
 <p align="center">
-  <img src="logo.svg" width=300>
+  <img src="static/img/logo.svg" width=300>
 </p>
 
 ## What is this
