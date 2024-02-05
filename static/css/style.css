@@ -408,7 +408,6 @@ main {
   display: flex;
   height: 40px;
   align-items: center;
-  justify-self: start;
   gap: 5px;
   color: #383838;
   font-weight: bold;
@@ -489,7 +488,6 @@ main {
 .colors_section__li {
   display: flex;
   gap: 10px;
-  justify-self: start;
   cursor: pointer;
   scale: 0.95;
   transition: 0.25s;
@@ -629,8 +627,9 @@ main {
     overflow: hidden;
   }
 
-  .section__subtitle {
-    border-bottom: 0;
+  .section__subtitle,
+  .dark .section__subtitle {
+    border-bottom: transparent solid 2px;
     max-width: auto;
   }
 
