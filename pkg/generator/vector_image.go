@@ -4,34 +4,26 @@ import (
 	"fmt"
 	"image/color"
 
+	_ "embed"
+
 	svg "github.com/ajstarks/svgo"
 	"github.com/hixraid/dummy-image-generator/pkg/data"
 )
 
-const svgStyles = `
-* {
-	-webkit-touch-callout: none;
-	-webkit-user-select:none;
-	-khtml-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	-o-user-select:none;
-	user-select:none;
-}
+const (
+	backgroundColorStyles = "fill: rgb(%d, %d, %d);"
+	fontStyles            = "font-size: %dpx; fill: rgb(%d, %d, %d);"
+)
 
-text {
-	font-family: Arial, Helvetica, sans-serif;
-	dominant-baseline: middle;
-	text-anchor: middle;
-}
-`
+//go:embed svg.css
+var svgStyles string
 
 func GenerateVectorImage(canvas *svg.SVG, info *data.ImageInfo) error {
 	canvas.Start(info.Size[0], info.Size[1])
 	canvas.Style("text/css", svgStyles)
 
 	r, g, b := rgbFromColor(info.BackgroundColor)
-	canvas.Rect(0, 0, info.Size[0], info.Size[1], fmt.Sprintf("fill: rgb(%d, %d, %d);", r, g, b))
+	canvas.Rect(0, 0, info.Size[0], info.Size[1], fmt.Sprintf(backgroundColorStyles, r, g, b))
 
 	var imageText = text(info)
 
@@ -40,7 +32,7 @@ func GenerateVectorImage(canvas *svg.SVG, info *data.ImageInfo) error {
 
 		r, g, b = rgbFromColor(info.TextColor)
 		textStyles := fmt.Sprintf(
-			"font-size: %dpx; fill: rgb(%d, %d, %d);",
+			fontStyles,
 			int(fontSize),
 			r, g, b,
 		)
