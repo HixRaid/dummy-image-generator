@@ -2,6 +2,7 @@ package handler
 
 import (
 	"fmt"
+	"io"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -28,9 +29,15 @@ func generateImage(ctx *gin.Context) {
 	ctx.Header("Content-type", getContentType(imageFormat))
 	ctx.Header("Cache-Control", "public, max-age=31557600")
 
-	err = service.GenerateImage(ctx.Writer, imageFormat, imageInfo)
+	buf, err := service.GenerateImage(imageFormat, imageInfo)
 	if err != nil {
-		response.NewErrorResponse(ctx, http.StatusInternalServerError, err.Error())
+		response.NewErrorResponse(ctx, http.StatusInternalServerError, "can't generate image")
+		return
+	}
+
+	_, err = io.Copy(ctx.Writer, buf)
+	if err != nil {
+		response.NewErrorResponse(ctx, http.StatusInternalServerError, "can't write response")
 		return
 	}
 }

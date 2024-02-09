@@ -1,8 +1,8 @@
 package service
 
 import (
+	"bytes"
 	"errors"
-	"image"
 	"image/gif"
 	"image/jpeg"
 	"image/png"
@@ -14,32 +14,40 @@ import (
 	"github.com/hixraid/dummy-image-generator/pkg/generator"
 )
 
-func GenerateImage(w io.Writer, format data.ImageFormat, info *data.ImageInfo) error {
+func GenerateImage(format data.ImageFormat, info *data.ImageInfo) (io.Reader, error) {
 	switch format {
-	case data.PNG, data.JPEG, data.WEBP, data.GIF:
-		img, err := generator.GenerateRasterImage(info)
-		if err != nil {
-			return err
-		}
-		return writeRasterImage(w, format, img)
 	case data.SVG:
-		canvas := svg.New(w)
-		return generator.GenerateVectorImage(canvas, info)
+		return writeVectorImage(info)
+	default:
+		return writeRasterImage(format, info)
 	}
-	return errors.New("can't found image format")
 }
 
-func writeRasterImage(w io.Writer, format data.ImageFormat, img image.Image) error {
-	switch format {
-	case data.PNG:
-		return png.Encode(w, img)
-	case data.JPEG:
-		return jpeg.Encode(w, img, nil)
-	case data.WEBP:
-		return webp.Encode(w, img, nil)
-	case data.GIF:
-		return gif.Encode(w, img, nil)
+func writeRasterImage(format data.ImageFormat, info *data.ImageInfo) (io.Reader, error) {
+	img, err := generator.GenerateRasterImage(info)
+	if err != nil {
+		return nil, err
 	}
 
-	return errors.New("can't found raster image format")
+	buf := bytes.NewBuffer(make([]byte, 0))
+
+	switch format {
+	case data.PNG:
+		return buf, png.Encode(buf, img)
+	case data.JPEG:
+		return buf, jpeg.Encode(buf, img, nil)
+	case data.WEBP:
+		return buf, webp.Encode(buf, img, nil)
+	case data.GIF:
+		return buf, gif.Encode(buf, img, nil)
+	}
+
+	return nil, errors.New("can't found image format")
+}
+
+func writeVectorImage(info *data.ImageInfo) (io.Reader, error) {
+	buf := bytes.NewBuffer(make([]byte, 0))
+	canvas := svg.New(buf)
+
+	return buf, generator.GenerateVectorImage(canvas, info)
 }

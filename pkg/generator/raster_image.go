@@ -8,6 +8,8 @@ import (
 	"github.com/hixraid/dummy-image-generator/pkg/data"
 )
 
+const fontPath = "fonts/arial.ttf"
+
 func GenerateRasterImage(info *data.ImageInfo) (image.Image, error) {
 	dc := gg.NewContext(info.Size[0], info.Size[1])
 
@@ -23,7 +25,7 @@ func GenerateRasterImage(info *data.ImageInfo) (image.Image, error) {
 
 	if imageText != "" {
 		fontSize := textSize(float64(info.Size[0]), float64(info.Size[1]), float64(len(imageText)))
-		if err := dc.LoadFontFace("fonts/arial.ttf", fontSize); err != nil {
+		if err := dc.LoadFontFace(fontPath, fontSize); err != nil {
 			return nil, errors.New("can't load font")
 		}
 
