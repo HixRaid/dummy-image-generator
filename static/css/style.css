@@ -594,13 +594,13 @@ main {
   }
 
   .formats_section__container {
-    gap: 10px;
+    gap: 15px;
   }
 
   .format {
-    font-size: 24px;
-    padding: 5px;
-    border-radius: 8px;
+    font-size: 36px;
+    padding: 7.5px;
+    border-radius: 11.25px;
   }
 
   .colors_section__ul {
@@ -642,12 +642,23 @@ main {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .formats_section__container {
+    gap: 10px;
+  }
+
+  .format {
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 8px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .colors_section__ul {
     grid-template-columns: 1fr;
-  }
-  .colors_section__li {
-    justify-self: center;
+    width: 200px;
+    margin: 0 auto;
   }
 }
 
@@ -679,11 +690,9 @@ main {
   }
 
   .sizes_section__ul {
+    margin: 0 auto;
+    width: 180px;
     grid-template-columns: 1fr;
-  }
-
-  .sizes_section__li {
-    justify-self: center;
   }
 }
 
