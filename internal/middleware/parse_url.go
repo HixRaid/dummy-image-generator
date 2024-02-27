@@ -89,7 +89,7 @@ func (p *ImageURLParser) ParseURL(ctx *gin.Context) {
 		}
 	}
 
-	imageFormat := p.defaultFormat
+	imageInfo.Format = p.defaultFormat
 
 	if pathLen > pathIndex {
 		format, ok := utils.ParseFormat(path[pathIndex])
@@ -100,7 +100,7 @@ func (p *ImageURLParser) ParseURL(ctx *gin.Context) {
 
 		if ok {
 			pathIndex++
-			imageFormat = format
+			imageInfo.Format = format
 		}
 	}
 
@@ -115,22 +115,7 @@ func (p *ImageURLParser) ParseURL(ctx *gin.Context) {
 	}
 
 	imageInfo.Text = ctx.Query("text")
-	ctx.Set(imageFormatCtx, imageFormat)
 	ctx.Set(imageInfoCtx, imageInfo)
-}
-
-func GetImageFormat(ctx *gin.Context) (data.ImageFormat, error) {
-	v, ok := ctx.Get(imageFormatCtx)
-	if !ok {
-		return "", errors.New("not found image_format")
-	}
-
-	imageFormat, ok := v.(data.ImageFormat)
-	if !ok {
-		return "", errors.New("invalid type image_format")
-	}
-
-	return imageFormat, nil
 }
 
 func GetImageInfo(ctx *gin.Context) (*data.ImageInfo, error) {

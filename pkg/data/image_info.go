@@ -185,6 +185,7 @@ var (
 
 type ImageInfo struct {
 	Size            ImageResolution
+	Format          ImageFormat
 	BackgroundColor color.Color
 	TextColor       color.Color
 	Text            string

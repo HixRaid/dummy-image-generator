@@ -19,17 +19,11 @@ func generateImage(ctx *gin.Context) {
 		return
 	}
 
-	imageFormat, err := middleware.GetImageFormat(ctx)
-	if err != nil {
-		response.NewErrorResponse(ctx, http.StatusInternalServerError, err.Error())
-		return
-	}
-
 	ctx.Status(http.StatusOK)
-	ctx.Header("Content-type", getContentType(imageFormat))
+	ctx.Header("Content-type", getContentType(imageInfo.Format))
 	ctx.Header("Cache-Control", "public, max-age=31557600")
 
-	buf, err := service.GenerateImage(imageFormat, imageInfo)
+	buf, err := service.GenerateImage(imageInfo)
 	if err != nil {
 		response.NewErrorResponse(ctx, http.StatusInternalServerError, "can't generate image")
 		return

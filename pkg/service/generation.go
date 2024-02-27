@@ -14,16 +14,16 @@ import (
 	"github.com/hixraid/dummy-image-generator/pkg/generator"
 )
 
-func GenerateImage(format data.ImageFormat, info *data.ImageInfo) (io.Reader, error) {
-	switch format {
+func GenerateImage(info *data.ImageInfo) (io.Reader, error) {
+	switch info.Format {
 	case data.SVG:
 		return writeVectorImage(info)
 	default:
-		return writeRasterImage(format, info)
+		return writeRasterImage(info)
 	}
 }
 
-func writeRasterImage(format data.ImageFormat, info *data.ImageInfo) (io.Reader, error) {
+func writeRasterImage(info *data.ImageInfo) (io.Reader, error) {
 	img, err := generator.GenerateRasterImage(info)
 	if err != nil {
 		return nil, err
@@ -31,7 +31,7 @@ func writeRasterImage(format data.ImageFormat, info *data.ImageInfo) (io.Reader,
 
 	buf := bytes.NewBuffer(make([]byte, 0))
 
-	switch format {
+	switch info.Format {
 	case data.PNG:
 		return buf, png.Encode(buf, img)
 	case data.JPEG:
