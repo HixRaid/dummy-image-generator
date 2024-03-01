@@ -27,33 +27,40 @@
           </div>
           <p class="header__left_panel__title">Dummy image generator</p>
         </div>
-        <ul class="header__ul">
-          <li class="header__li">
-            <label class="header__link" onclick="scrollToTitle('about')">
-              About
-            </label>
-          </li>
-          <li class="header__li">
-            <label class="header__link" onclick="scrollToTitle('sizes')">
-              Sizes
-            </label>
-          </li>
-          <li class="header__li">
-            <label class="header__link" onclick="scrollToTitle('formats')">
-              Formats
-            </label>
-          </li>
-          <li class="header__li">
-            <label class="header__link" onclick="scrollToTitle('colors')">
-              Colors
-            </label>
-          </li>
-          <li class="header__li">
-            <label class="header__link" onclick="scrollToTitle('source')">
-              Source
-            </label>
-          </li>
-        </ul>
+        <div class="header__right_panel">
+          <ul class="header__ul">
+            <li class="header__li">
+              <label class="header__link" onclick="scrollToTitle('about')">
+                About
+              </label>
+            </li>
+            <li class="header__li">
+              <label class="header__link" onclick="scrollToTitle('sizes')">
+                Sizes
+              </label>
+            </li>
+            <li class="header__li">
+              <label class="header__link" onclick="scrollToTitle('formats')">
+                Formats
+              </label>
+            </li>
+            <li class="header__li">
+              <label class="header__link" onclick="scrollToTitle('colors')">
+                Colors
+              </label>
+            </li>
+            <li class="header__li">
+              <label class="header__link" onclick="scrollToTitle('source')">
+                Source
+              </label>
+            </li>
+          </ul>
+          <div class="header__theme_button_wrapper" onclick="switchTheme()">
+            <button class="header__theme_button">
+              <span></span>
+            </button>
+          </div>
+        </div>
         <div
           class="burger_button"
           onclick="setActiveBurgerMenu(!activeBurgerMenu)"

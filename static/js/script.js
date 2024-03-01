@@ -4,6 +4,8 @@ let body = document.querySelector('body');
 
 let activeBurgerMenu = false;
 
+let html = document.querySelector('html');
+
 // Smooth scroll to title by id
 function scrollToTitle(titleId) {
   setActiveBurgerMenu(false);
@@ -31,4 +33,13 @@ function setActiveBurgerMenu(active) {
     burgerMenu.classList.remove('active');
     body.classList.remove('noscroll');
   }
+}
+
+function switchTheme() {
+  if (html.classList.contains('dark')) {
+    html.classList.remove('dark');
+    return;
+  }
+
+  html.classList.add('dark');
 }
