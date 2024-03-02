@@ -35,7 +35,7 @@ img {
 }
 
 * {
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 body {
@@ -135,17 +135,12 @@ header {
   font-weight: bold;
   color: #383838;
   align-items: center;
-  transition: 0.25s;
   cursor: pointer;
   user-select: none;
 }
 
 .dark .header__link {
   color: #909090;
-}
-
-.header__link:hover {
-  color: #00b6aa;
 }
 
 .header__link::before {
@@ -159,12 +154,29 @@ header {
   border-radius: 2px;
   scale: 0;
   background-color: transparent;
-  transition: 0.25s;
+  transition: 0.5s;
 }
 
-.header__link:hover::before {
-  scale: 1;
-  background-color: #00b6aa;
+.theme_panel {
+  display: flex;
+  background-color: #eeeeee;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+}
+
+.dark .theme_panel {
+  background-color: #202020;
+}
+
+.theme_label {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #383838;
+}
+
+.dark .theme_label {
+  color: #909090;
 }
 
 /* Theme button */
@@ -179,9 +191,8 @@ header {
   width: 40px;
   outline: none;
   border-radius: 10px;
-  border: 1px solid #00b6aa;
+  border: #383838 solid 2px;
   padding: 0;
-  /* border: 0; */
   background-color: transparent;
   margin: 10px;
   box-shadow: 0 0 10px #e2e2e2;
@@ -193,19 +204,20 @@ header {
   display: block;
   top: 2px;
   left: 2px;
-  height: 14px;
-  width: 14px;
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
-  background-color: #00b6aa;
-  transition: 0.15s;
-}
-
-.dark .header__theme_button span {
-  left: 22px;
+  background-color: #383838;
 }
 
 .dark .header__theme_button {
   box-shadow: 0 0 10px #101010;
+  border: #909090 solid 2px;
+}
+
+.dark .header__theme_button span {
+  left: 22px;
+  background-color: #909090;
 }
 
 /* Burger */
@@ -228,8 +240,6 @@ header {
   background-color: #383838;
   left: 5%;
   right: 5%;
-
-  transition: 0.25s;
 }
 
 .dark .burger_button__line {
@@ -279,7 +289,6 @@ header {
   right: 0;
   transform: translate(0, 100%);
   opacity: 0;
-  transition: 0.5s;
   overflow-y: hidden;
 }
 
@@ -302,12 +311,13 @@ header {
   width: 100%;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   display: flex;
   gap: 10px;
 }
 
 .burger_menu__li {
-  width: 100%;
+  width: 200px;
 }
 
 .burger_menu__link {
@@ -316,19 +326,16 @@ header {
   color: #383838;
   font-size: 32px;
   font-weight: bold;
-  text-align: center;
   width: 100%;
-  transition: 0.25s;
   cursor: pointer;
   user-select: none;
+  border-bottom: #eeeeee solid 2px;
+  padding: 0 10px;
 }
 
 .dark .burger_menu__link {
   color: #909090;
-}
-
-.burger_menu__link:hover {
-  color: #00b6aa;
+  border-bottom: #202020 solid 2px;
 }
 
 /* Main */
@@ -409,7 +416,7 @@ main {
 }
 
 .path_structure__params {
-  border: 1px solid #00b6aa;
+  border: #00b6aa solid 1px;
   padding: 4px;
   border-radius: 6px;
   color: #00b6aa;
@@ -461,20 +468,10 @@ main {
   cursor: pointer;
   opacity: 0.9;
   scale: 0.95;
-  transition: 0.25s;
 }
 
 .dark .sizes_section__li {
   color: #606060;
-}
-
-.sizes_section__li:hover {
-  opacity: 1;
-  scale: 1;
-}
-
-.sizes_section__li:hover .size_number {
-  background-color: #00b6aa;
 }
 
 .size_number {
@@ -482,7 +479,6 @@ main {
   background-color: #383838;
   padding: 4px;
   border-radius: 6px;
-  transition: 0.25s;
 }
 
 .dark .size_number {
@@ -512,17 +508,11 @@ main {
   border-radius: 15px;
   cursor: pointer;
   scale: 0.95;
-  transition: 0.25s;
 }
 
 .dark .format {
   color: #181818;
   background-color: #505050;
-}
-
-.format:hover {
-  scale: 1;
-  background-color: #00b6aa;
 }
 
 /* Colors section */
@@ -537,8 +527,6 @@ main {
   gap: 10px;
   cursor: pointer;
   scale: 0.95;
-  transition: 0.25s;
-
   position: relative;
 }
 
@@ -553,29 +541,15 @@ main {
   right: -5px;
   top: -5px;
   bottom: -5px;
-  transition: 0.25s;
-}
-
-.colors_section__li:hover:before {
-  background-color: #43c0b63b;
-}
-
-.colors_section__li:hover {
-  scale: 1;
 }
 
 .color_name {
   color: #383838;
   font-weight: bold;
-  transition: 0.25s;
 }
 
 .dark .color_name {
   color: #606060;
-}
-
-.colors_section__li:hover .color_name {
-  color: #00b6aa;
 }
 
 .color_img_wrapper {
@@ -607,25 +581,16 @@ main {
   text-decoration: none;
   padding: 4px;
   border-radius: 6px;
-  border: 1px solid #383838;
+  border: #383838 solid 1px;
   color: #383838;
 
   opacity: 0.9;
   scale: 0.95;
-  transition: 0.25s;
 }
 
 .dark .source_link {
-  border: 1px solid #505050;
+  border: #505050 solid 1px;
   color: #505050;
-}
-
-.source_link:hover {
-  opacity: 1;
-  scale: 1;
-  color: #00b6aa;
-  border: 1px solid #00b6aa;
-  background-color: #43c0b63b;
 }
 
 /* Adaptive */
@@ -656,6 +621,10 @@ main {
 }
 
 @media screen and (max-width: 700px) {
+  body.noscroll {
+    overflow: hidden;
+  }
+
   .header__right_panel {
     display: none;
   }
@@ -670,10 +639,6 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  body.noscroll {
-    overflow: hidden;
-  }
-
   .section__subtitle,
   .dark .section__subtitle {
     border-bottom: transparent solid 2px;
@@ -762,6 +727,10 @@ main {
     font-size: 24px;
   }
 
+  .burger_menu__li {
+    width: 150px;
+  }
+
   .path_structure {
     font-size: 16px;
     flex-direction: column;
@@ -784,8 +753,66 @@ main {
   }
 }
 
-@media screen and (max-height: 350px) {
+@media screen and (max-height: 380px) {
+  .burger_menu__li {
+    width: 150px;
+  }
+
   .burger_menu__link {
     font-size: 24px;
+  }
+}
+
+@media (hover: hover) {
+  .header__theme_button:hover {
+    border: #00b6aa solid 2px;
+    scale: 1.15;
+  }
+
+  .header__theme_button:hover span {
+    background-color: #00b6aa;
+  }
+
+  .header__link:hover {
+    color: #00b6aa;
+  }
+
+  .header__link:hover::before {
+    scale: 1;
+    background-color: #00b6aa;
+  }
+
+  .sizes_section__li:hover {
+    opacity: 1;
+    scale: 1;
+  }
+
+  .sizes_section__li:hover .size_number {
+    background-color: #00b6aa;
+  }
+
+  .format:hover {
+    scale: 1;
+    background-color: #00b6aa;
+  }
+
+  .colors_section__li:hover:before {
+    background-color: #43c0b63b;
+  }
+
+  .colors_section__li:hover {
+    scale: 1;
+  }
+
+  .colors_section__li:hover .color_name {
+    color: #00b6aa;
+  }
+
+  .source_link:hover {
+    opacity: 1;
+    scale: 1;
+    color: #00b6aa;
+    border: #00b6aa solid 1px;
+    background-color: #43c0b63b;
   }
 }
