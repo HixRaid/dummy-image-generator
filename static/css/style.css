@@ -766,7 +766,6 @@ main {
 @media (hover: hover) {
   .header__theme_button:hover {
     border: #00b6aa solid 2px;
-    scale: 1.15;
   }
 
   .header__theme_button:hover span {
@@ -809,6 +808,54 @@ main {
   }
 
   .source_link:hover {
+    opacity: 1;
+    scale: 1;
+    color: #00b6aa;
+    border: #00b6aa solid 1px;
+    background-color: #43c0b63b;
+  }
+}
+
+@media (hover: none) {
+  .header__theme_button:active {
+    border: #00b6aa solid 2px;
+  }
+
+  .header__theme_button:active span {
+    background-color: #00b6aa;
+  }
+
+  .header__link:active {
+    color: #00b6aa;
+  }
+
+  .sizes_section__li:active {
+    opacity: 1;
+    scale: 1;
+  }
+
+  .sizes_section__li:active .size_number {
+    background-color: #00b6aa;
+  }
+
+  .format:active {
+    scale: 1;
+    background-color: #00b6aa;
+  }
+
+  .colors_section__li:active:before {
+    background-color: #43c0b63b;
+  }
+
+  .colors_section__li:active {
+    scale: 1;
+  }
+
+  .colors_section__li:active .color_name {
+    color: #00b6aa;
+  }
+
+  .source_link:active {
     opacity: 1;
     scale: 1;
     color: #00b6aa;
